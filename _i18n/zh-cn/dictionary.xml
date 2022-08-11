@@ -244,9 +244,6 @@
   <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes 集群将从工作空间中删除，并且在 Canvas 上不再可见。</block>
   <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 Cloud Manager 管理存储类。</block>
   <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="doc">管理存储类</block>
-  <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">提供存储类的名称，选择定义选项，然后单击 * 下一步 * 。</block>
-  <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">显示 K8s 存储类定义选项的屏幕截图。</block>
-  <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">选择要连接到集群的工作环境。单击 * 添加 * 。</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">显示为 Kubernetes 集群选择工作环境的屏幕截图。</block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">您可以从 Kubernetes 集群的资源页面中单击以查看存储类。</block>
@@ -312,7 +309,6 @@
   <block id="c4541926fe853a3614406482ac212fff" category="list-text">需要使用四个最新版本的 Astra Trident 之一。您可以直接从 Cloud Manager 安装 Astra Trident 。您应该 <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> 安装 Astra Trident 之前</block>
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">备份和还原</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">备份和还原只需要基本授权。</block>
-  <block id="589cddcfb97ddd817654b8448e583560" category="list-text">要使用 Cloud Manager 添加存储类，需要扩展授权。</block>
   <block id="e38848cde65bc177038607eba51773c3" category="list-text">安装 Astra Trident</block>
   <block id="0cc29c3016f8edd45e66cfd491cc35e4" category="list-text">要安装 Astra Trident ，您需要为 Cloud Manager 提供完全授权。</block>
   <block id="6ddcbf7c123160275093489b09f57178" category="admonition">安装 Astra Trident 时， Cloud Manager 会安装 Astra Trident 后端和 Kubernetes 密钥，其中包含 Astra Trident 与存储集群通信所需的凭据。</block>
@@ -487,4 +483,22 @@
   <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">将受管Kubernetes集群添加到Canvas后、您可以使用Cloud Manager管理存储类。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">从"画布"中、将Kubernetes工作环境拖放到Cloud Volumes ONTAP 或Amazon FSx for ONTAP 工作环境中、以打开存储类向导。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
+  <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">提供存储类的名称。</block>
+  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">选择*文件系统*或*块*存储。</block>
+  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">对于*块*存储、选择文件系统类型(fstype)</block>
+  <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">显示配置K8s存储类时块存储的fstype选项的屏幕截图。</block>
+  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">对于*块*或*文件系统*存储、您可以选择启用存储经济性。</block>
+  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">显示配置块或文件K8s存储类时存储经济性选项的屏幕截图。</block>
+  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab5290e8336f16751587ce4bb04bee9a" category="list-text">选择卷扩展、卷绑设置和默认存储类选项。单击 * 下一步 * 。</block>
+  <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager可监控Kubernetes集群中对后端的更改、并在添加新卷后更新永久性卷表。如果在集群上配置了自动备份、则会在新的永久性卷上自动启用备份。</block>
+  <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">要使用Cloud Manager添加存储类并监控集群中的后端更改、需要扩展授权。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定义存储类</block>
+  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>现在、您可以：</block>
+  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定块存储的文件系统类型(fstype)</block>
+  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">为块和文件存储提供存储经济性</block>
 </blocks>

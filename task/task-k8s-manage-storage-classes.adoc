@@ -25,10 +25,20 @@ NOTE: 如果未定义存储类、则集群将显示需要执行操作。双击Ca
 
 .步骤
 . 从"画布"中、将Kubernetes工作环境拖放到Cloud Volumes ONTAP 或Amazon FSx for ONTAP 工作环境中、以打开存储类向导。
-. 提供存储类的名称，选择定义选项，然后单击 * 下一步 * 。
+. 提供存储类的名称。
+. 选择*文件系统*或*块*存储。
 +
-image:screenshot-k8s-define-storage-class.png["显示 K8s 存储类定义选项的屏幕截图。"]
+.. 对于*块*存储、选择文件系统类型(fstype)
++
+image:screenshot-k8s-storage-economy.png["显示配置K8s存储类时块存储的fstype选项的屏幕截图。"]
 
+.. 对于*块*或*文件系统*存储、您可以选择启用存储经济性。
++
+image:screenshot-k8s-storage-fstype.png["显示配置块或文件K8s存储类时存储经济性选项的屏幕截图。"]
+
+
+
+. 选择卷扩展、卷绑设置和默认存储类选项。单击 * 下一步 * 。
 . 选择要连接到集群的工作环境。单击 * 添加 * 。
 +
 image:screenshot-k8s-select-storage-class.png["显示为 Kubernetes 集群选择工作环境的屏幕截图。"]

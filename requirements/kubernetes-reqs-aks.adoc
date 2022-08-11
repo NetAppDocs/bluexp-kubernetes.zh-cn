@@ -113,7 +113,7 @@ RBAC 验证仅在启用了 Active Directory （ AD ）的 Kubernetes 集群上�
 您需要在每个 Kubernetes 集群上授权 Connector 角色，以便 Connector 可以发现和管理集群。
 
 备份和还原:: 备份和还原只需要基本授权。
-添加存储类:: 要使用 Cloud Manager 添加存储类，需要扩展授权。
+添加存储类:: 要使用Cloud Manager添加存储类并监控集群中的后端更改、需要扩展授权。
 安装 Astra Trident:: 要安装 Astra Trident ，您需要为 Cloud Manager 提供完全授权。
 +
 --
@@ -155,12 +155,14 @@ rules:
           - namespaces
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
           - persistentvolumes
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -169,6 +171,7 @@ rules:
       verbs:
           - get
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -176,6 +179,7 @@ rules:
       verbs:
           - list
           - create
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -188,12 +192,14 @@ rules:
           - tridentbackends
       verbs:
           - list
+          - watch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentorchestrators
       verbs:
           - get
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -232,8 +238,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -242,6 +250,7 @@ rules:
           - get
           - create
           - list
+          - watch
           - delete
           - patch
     - apiGroups:
@@ -253,8 +262,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
