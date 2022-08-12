@@ -1,41 +1,17 @@
 ---
-settings:
-  name: Kubernetes clusters
-  platform: cloud
-  internal:
-    pdf_enabled: true
-  prod:
-    pdf_enabled: true
-    harmony_enabled: false
-  rss_page: whats-new.html
-  filter:
-    label: 云提供商
-    default: 所有云提供商
-    options:
-    - name: Amazon Web Services
-      alias: AWS
-      id: aws
-    - name: Google Cloud
-      alias: Google Cloud
-      id: gcp
-    - name: Microsoft Azure
-      alias: Azure 酒店
-      id: azure
-  langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr
-sidebar:
-  entries:
-  - title: Kubernetes集群文档
-    url: "/index.html"
-  - title: 发行说明
-    url: "/whats-new.html"
+indexpage:
+  lead: 将受管 Kubernetes 集群添加到 Cloud Manager 中以进行高级数据管理。
+  tiles:
   - title: 入门
-    entries:
+    links:
+    - title: 新增功能
+      url: "/whats-new.html"
     - title: 了解 Kubernetes 数据管理
       url: "/concept-kubernetes.html"
     - title: 快速入门
       url: "/task/task-k8s-quick-start.html"
   - title: 要求
-    entries:
+    links:
     - title: AWS 上的 Kubernetes 集群
       flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
@@ -46,7 +22,7 @@ sidebar:
       flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: 添加 Kubernetes 集群
-    entries:
+    links:
     - title: 在 AWS 上添加集群
       flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
@@ -57,9 +33,8 @@ sidebar:
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: 管理 Kubernetes 集群
-    url: "/concept-manage-k8s.html"
-    entries:
-    - title: 安装或升级Astra Trident
+    links:
+    - title: 安装 Astra Trident
       url: "/task/task-k8s-manage-trident.html"
     - title: 管理存储类
       url: "/task/task-k8s-manage-storage-classes.html"
@@ -67,17 +42,19 @@ sidebar:
       url: "/task/task-k8s-manage-persistent-volumes.html"
     - title: 删除集群
       url: "/task/task-k8s-manage-remove-cluster.html"
-    - title: 启用 NetApp 云数据服务
+    - title: 启用数据服务
       url: "/task/task-kubernetes-enable-services.html"
-  - title: 知识和支持
-    entries:
+  - title: 获取有关 Cloud Manager 的帮助
+    links:
     - title: 注册以获得支持
       url: "/support/task-support-registration.html"
     - title: 获取帮助
       url: "/support/task-get-help.html"
-  - title: 法律声明
-    url: "/legal-notices.html"
-product-family:
-  name: Cloud Manager
-  repo: cloud-manager-family
-  sidebar_label: All Cloud Manager documentation
+  - title: 博客社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 博客
+      url: https://cloud.netapp.com/blog
+    - title: 云网络研讨会
+      url: https://cloud.netapp.com/events
