@@ -22,29 +22,13 @@ summary: 了解 Cloud Manager 中 Kubernetes 的新增功能。
 
 * 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
 +
-ifdef::aws[]
-
-
-
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS 中 Kubernetes 集群的要求"]
 
-endif::aws[]
-
 +
-
-ifdef::azure[]
-
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure 中 Kubernetes 集群的要求"]
 
-endif::azure[]
-
 +
-
-ifdef::gcp[]
-
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
-
-endif::gcp[]
 
 * 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]现在、您可以：
 +
