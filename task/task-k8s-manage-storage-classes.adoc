@@ -38,7 +38,7 @@ image:screenshot-k8s-storage-fstype.png["显示配置块或文件K8s存储类时
 
 
 
-. 选择卷扩展、卷绑设置和默认存储类选项。单击 * 下一步 * 。
+. 选择卷扩展、卷绑定和默认存储类选项。单击 * 下一步 * 。
 . 选择要连接到集群的工作环境。单击 * 添加 * 。
 +
 image:screenshot-k8s-select-storage-class.png["显示为 Kubernetes 集群选择工作环境的屏幕截图。"]

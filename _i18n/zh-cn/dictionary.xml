@@ -429,19 +429,6 @@
   <block id="187496d0d891ffe76a43f6ffdd995505" category="paragraph"><block ref="187496d0d891ffe76a43f6ffdd995505" category="inline-link-macro-rx"></block></block>
   <block id="e72a8a52b20d0b466a3152c8c60b4f2b" category="paragraph"><block ref="e72a8a52b20d0b466a3152c8c60b4f2b" category="inline-link-macro-rx"></block></block>
   <block id="09e2861e1b9bab7606bd9fd36b62d621" category="paragraph"><block ref="09e2861e1b9bab7606bd9fd36b62d621" category="inline-link-macro-rx"></block></block>
-  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">云提供商</block>
-  <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">所有云提供商</block>
-  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="sidebar">Google Cloud</block>
-  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure 酒店</block>
-  <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
-  <block id="6beb2fa01dc121194547db1bfbe03408" category="paragraph">endif::aws[]</block>
-  <block id="b010c7530103ef9947582474d65ff9a3" category="paragraph">ifdef::azure[]</block>
-  <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
-  <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
-  <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">如果未定义存储类、则集群将显示需要执行操作。双击Canvas上的集群将打开操作页面以添加存储类。</block>
@@ -491,14 +478,13 @@
   <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">对于*块*或*文件系统*存储、您可以选择启用存储经济性。</block>
   <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">显示配置块或文件K8s存储类时存储经济性选项的屏幕截图。</block>
   <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ab5290e8336f16751587ce4bb04bee9a" category="list-text">选择卷扩展、卷绑设置和默认存储类选项。单击 * 下一步 * 。</block>
   <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager可监控Kubernetes集群中对后端的更改、并在添加新卷后更新永久性卷表。如果在集群上配置了自动备份、则会在新的永久性卷上自动启用备份。</block>
   <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">要使用Cloud Manager添加存储类并监控集群中的后端更改、需要扩展授权。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定义存储类</block>
   <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>现在、您可以：</block>
   <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定块存储的文件系统类型(fstype)</block>
   <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">为块和文件存储提供存储经济性</block>
+  <block id="f7fcb1352aec0188a9f059c28c8b96f2" category="list-text">选择卷扩展、卷绑定和默认存储类选项。单击 * 下一步 * 。</block>
 </blocks>
