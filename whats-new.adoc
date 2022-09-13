@@ -18,6 +18,16 @@ summary: 了解 Cloud Manager 中 Kubernetes 的新增功能。
 
 
 
+== 2022年9月18日
+
+现在、您可以将自管理的OpenShift集群导入到Cloud Manager中。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes集群的要求"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["将OpenShift集群添加到Cloud Manager"]
+
+
+
+
 == 2022年7月31日
 
 * 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
@@ -30,12 +40,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 +
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
 
-* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]现在、您可以：
-+
-** 指定块存储的文件系统类型(fstype)
-** 为块和文件存储提供存储经济性
-
-
+* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块存储指定文件系统类型(fstype)。
 
 
 

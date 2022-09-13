@@ -1,0 +1,375 @@
+---
+sidebar: sidebar 
+permalink: /requirements/kubernetes-reqs-openshift.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
+summary: 您可以使用Cloud Manager添加和管理自管理OpenShift Kubernetes集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。 
+---
+= OpenShift中的Kubernetes集群的要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Cloud Manager添加和管理自管理OpenShift Kubernetes集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。
+
+
+
+== 要求
+
+Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从 Cloud Manager 安装 Astra Trident 。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
+
+
+要升级 Astra Trident ， link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["使用操作员升级"^]。
+
+Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存储。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
+Cloud Manager Connector:: 要导入和管理Kubernetes集群、需要使用Cloud Manager Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：
++
+--
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWS连接器"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure连接器"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connector"]
+
+
+--
+网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。
+具有RBAC授权的Kubernetes配置文件(kubeconfig):: 要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。 <<Create a kubeconfig file>>。
++
+--
+* 备份和还原：备份和还原仅需要基本授权。
+* 添加存储类：要使用Cloud Manager添加存储类并监控集群中对后端的更改、需要扩展授权。
+* 安装Astra Trident：要安装Astra Trident、您需要为Cloud Manager提供完全授权。
++
+
+NOTE: 安装 Astra Trident 时， Cloud Manager 会安装 Astra Trident 后端和 Kubernetes 密钥，其中包含 Astra Trident 与存储集群通信所需的凭据。
+
+
+
+--
+
+
+
+
+== 创建kubeconfig文件
+
+使用OpenShift CLI创建一个kubeconfig文件以导入到Cloud Manager中。
+
+.步骤
+. 使用管理员用户通过公有 URL使用`oc login`登录到OpenShift命令行界面。
+. 按如下所示创建服务帐户：
++
+.. 创建名为`oc-service-account.yaml`的服务帐户文件。
++
+根据需要调整名称和命名空间。如果在此处进行了更改，则应在以下步骤中应用相同的更改。
+
++
+[source, cli]
+----
+oc-service-account.yaml
+----
++
+[source, cli]
+----
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: oc-service-account
+  namespace: default
+----
+.. 应用服务帐户：
++
+[source, cli]
+----
+kubectl apply -f oc-service-account.yaml
+----
+
+
+. 根据您的授权要求创建自定义角色绑定。
++
+.. 创建名为`oc-clusterrolebind.yaml`的`ClusterRoleBindingm`文件。
++
+[source, cli]
+----
+oc-clusterrolebinding.yaml
+----
+.. 根据需要为集群配置RBAC授权。
++
+[role="tabbed-block"]
+====
+.备份 / 还原
+--
+添加基本授权，以便为 Kubernetes 集群启用备份和还原。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default
+----
+--
+.存储类
+--
+添加扩展授权以使用 Cloud Manager 添加存储类。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - create
+          - list
+          - watch
+          - delete
+          - patch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+          - tridentbackendconfigs
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default
+----
+--
+.安装 Trident
+--
+授予完全管理员授权并启用Cloud Manager以安装Astra Trident。
+
+[source, cli]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cloudmanager-access-clusterrole
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: oc-service-account
+  namespace: default
+----
+--
+====
+.. 应用集群角色绑定：
++
+[source, cli]
+----
+kubectl apply -f oc-clusterrolebinding.yaml
+----
+
+
+. 列出服务帐户密码，将 ` <context>` 替换为适用于您的安装的正确上下文：
++
+[source, cli]
+----
+kubectl get serviceaccount oc-service-account --context <context> --namespace default -o json
+----
++
+输出的结尾应类似于以下内容：
+
++
+[source, cli]
+----
+"secrets": [
+{ "name": "oc-service-account-dockercfg-vhz87"},
+{ "name": "oc-service-account-token-r59kr"}
+]
+----
++
+`sec白 烟` 数组中每个元素的索引均以 0 开头。在上面的示例中、`oc-service-account-dockercfg-vhz87`的索引为0、`oc-service-account-token-r59krs`的索引为1。在输出中，记下包含 "token" 一词的服务帐户名称的索引。
+
+. 按如下所示生成 kubeconfig ：
++
+.. 创建 `create-kubeconfig.sh` 文件。将以下脚本开头的 `token_index` 替换为正确的值。
++
+[source, cli]
+----
+create-kubeconfig.sh
+----
++
+[source, sh]
+----
+# Update these to match your environment.
+# Replace TOKEN_INDEX with the correct value
+# from the output in the previous step. If you
+# didn't change anything else above, don't change
+# anything else here.
+
+SERVICE_ACCOUNT_NAME=oc-service-account
+NAMESPACE=default
+NEW_CONTEXT=oc
+KUBECONFIG_FILE='kubeconfig-sa'
+
+CONTEXT=$(kubectl config current-context)
+
+SECRET_NAME=$(kubectl get serviceaccount ${SERVICE_ACCOUNT_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.secrets[TOKEN_INDEX].name}')
+TOKEN_DATA=$(kubectl get secret ${SECRET_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.data.token}')
+
+TOKEN=$(echo ${TOKEN_DATA} | base64 -d)
+
+# Create dedicated kubeconfig
+# Create a full copy
+kubectl config view --raw > ${KUBECONFIG_FILE}.full.tmp
+
+# Switch working context to correct context
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp config use-context ${CONTEXT}
+
+# Minify
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp \
+  config view --flatten --minify > ${KUBECONFIG_FILE}.tmp
+
+# Rename context
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  rename-context ${CONTEXT} ${NEW_CONTEXT}
+
+# Create token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-credentials ${CONTEXT}-${NAMESPACE}-token-user \
+  --token ${TOKEN}
+
+# Set context to use token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --user ${CONTEXT}-${NAMESPACE}-token-user
+
+# Set context to correct namespace
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --namespace ${NAMESPACE}
+
+# Flatten/minify kubeconfig
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  view --flatten --minify > ${KUBECONFIG_FILE}
+
+# Remove tmp
+rm ${KUBECONFIG_FILE}.full.tmp
+rm ${KUBECONFIG_FILE}.tmp
+----
+.. 获取用于将其应用于 Kubernetes 集群的命令。
++
+[source, cli]
+----
+source create-kubeconfig.sh
+----
+
+
+
+
+您将使用生成的`kubeconfig-sa`文件将OpenShift集群添加到Cloud Manager中。

@@ -471,20 +471,68 @@
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">从"画布"中、将Kubernetes工作环境拖放到Cloud Volumes ONTAP 或Amazon FSx for ONTAP 工作环境中、以打开存储类向导。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
   <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">提供存储类的名称。</block>
-  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">选择*文件系统*或*块*存储。</block>
-  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">对于*块*存储、选择文件系统类型(fstype)</block>
   <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">显示配置K8s存储类时块存储的fstype选项的屏幕截图。</block>
-  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">对于*块*或*文件系统*存储、您可以选择启用存储经济性。</block>
-  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">显示配置块或文件K8s存储类时存储经济性选项的屏幕截图。</block>
-  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud Manager可监控Kubernetes集群中对后端的更改、并在添加新卷后更新永久性卷表。如果在集群上配置了自动备份、则会在新的永久性卷上自动启用备份。</block>
   <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">要使用Cloud Manager添加存储类并监控集群中的后端更改、需要扩展授权。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定义存储类</block>
-  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>现在、您可以：</block>
-  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">指定块存储的文件系统类型(fstype)</block>
-  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">为块和文件存储提供存储经济性</block>
   <block id="f7fcb1352aec0188a9f059c28c8b96f2" category="list-text">选择卷扩展、卷绑定和默认存储类选项。单击 * 下一步 * 。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">现在、您可以将自管理的OpenShift集群导入到Cloud Manager中。</block>
+  <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">OpenShift中的Kubernetes集群的要求</block>
+  <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
+  <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">将OpenShift集群添加到Cloud Manager</block>
+  <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
+  <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、现在、您可以为块存储指定文件系统类型(fstype)。</block>
+  <block id="3c2adb793409d16c72d81d49ec7cd745" category="summary">将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。</block>
+  <block id="1d0aa2134f57ae761efb59f68c5d0044" category="paragraph">将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。</block>
+  <block id="775f8efc928538f555b4520733a0825d" category="paragraph">在添加OpenShift集群之前、您需要：</block>
+  <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">创建kubeconfig文件</block>
+  <block id="40582f5905c5438cc50d0b3856d01bdd" category="list-text">您在中创建的`kubeconfig-sa`文件 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">集群的公有 证书颁发机构(例如ca.crt)、客户端密钥(例如tls.key)和客户端证书(例如tls.crt)文件。</block>
+  <block id="17011a566ae4f46bae81e507282825fb" category="list-text">在*画布*上、选择*添加工作环境*。</block>
+  <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">选择您的云提供程序并选择* Kubernetes Cluster*、然后选择*下一步*。</block>
+  <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">选择*导入集群*、然后选择*下一步*。</block>
+  <block id="de6737449407eb5afbd77e9794daa605" category="list-text">上传您在中创建的`kubeconfig-sa`文件 <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。选择Kubernetes集群并选择*下一步*。</block>
+  <block id="7c371426945f4674b445faa898f442c8" category="list-text">上传集群证书。</block>
+  <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">集群证书上传屏幕的屏幕截图。</block>
+  <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11fdcf36bc2c8b5bfd93e6121adc30e4" category="list-text">选择*文件系统*或*块*存储。对于*块*存储、选择文件系统类型(fstype)。</block>
+  <block id="1688bddc71d0ab83d2459fc2d264cbe0" category="paragraph"><block ref="1688bddc71d0ab83d2459fc2d264cbe0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="157f04e8460a66677d3d8d3b9e7d3b2a" category="summary">您可以使用Cloud Manager添加和管理自管理OpenShift Kubernetes集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。</block>
+  <block id="28c5fcd62b4a87354b50e4967cd0022a" category="list-text">要导入和管理Kubernetes集群、需要使用Cloud Manager Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：</block>
+  <block id="78f4011ce4eec11823de490a29f344e7" category="inline-link-macro">AWS连接器</block>
+  <block id="cffb555a0390870f6d957bab2b87008e" category="list-text"><block ref="cffb555a0390870f6d957bab2b87008e" category="inline-link-macro-rx"></block></block>
+  <block id="625f50cfccef81e43215d5f35b6122fe" category="inline-link-macro">Azure连接器</block>
+  <block id="c8a8cbc981f0028a05bbbdbdef98749c" category="list-text"><block ref="c8a8cbc981f0028a05bbbdbdef98749c" category="inline-link-macro-rx"></block></block>
+  <block id="6d75f957aed766005dc3be4d9f8c4ec5" category="inline-link-macro">Google Cloud Connector</block>
+  <block id="e51199bdde0640d2bca477ecdc555e8f" category="list-text"><block ref="e51199bdde0640d2bca477ecdc555e8f" category="inline-link-macro-rx"></block></block>
+  <block id="9703b589f82c3c63870b38bf11559988" category="list-text">Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。</block>
+  <block id="890de07cb51c2692baea480106b633e1" category="list-text">具有RBAC授权的Kubernetes配置文件(kubeconfig)</block>
+  <block id="01c29ea434ec706b9c6a08114a6edec6" category="list-text">要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。 <block ref="e356c2da27abb1a00cc68449c7fb7c0f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="71555b5b57250c45d25fb80d40ba1a02" category="list-text">备份和还原：备份和还原仅需要基本授权。</block>
+  <block id="da3cca107e2faeb6cc5e537d940ecafc" category="list-text">添加存储类：要使用Cloud Manager添加存储类并监控集群中对后端的更改、需要扩展授权。</block>
+  <block id="02bb014d52bfff4da8649fb7d63c8c4e" category="list-text">安装Astra Trident：要安装Astra Trident、您需要为Cloud Manager提供完全授权。</block>
+  <block id="d35cb258bf38db8a375c6b851aef5d80" category="section-title">创建kubeconfig文件</block>
+  <block id="df0933cfbf38c818728cae3b18f61b03" category="paragraph">使用OpenShift CLI创建一个kubeconfig文件以导入到Cloud Manager中。</block>
+  <block id="6bc1e2f01411b6d08baccbe5ffe9dc00" category="list-text">使用管理员用户通过公有 URL使用`oc login`登录到OpenShift命令行界面。</block>
+  <block id="5f85438ae0f2c9122a5cf54e8e098c98" category="list-text">按如下所示创建服务帐户：</block>
+  <block id="565ca50cb95f086800a9a4312c2bf4a1" category="list-text">创建名为`oc-service-account.yaml`的服务帐户文件。</block>
+  <block id="210c5331ab46caa141e6ac9d5aeb1bee" category="paragraph">根据需要调整名称和命名空间。如果在此处进行了更改，则应在以下步骤中应用相同的更改。</block>
+  <block id="605443509a67749999ab3b0d3ba43e8b" category="list-text">应用服务帐户：</block>
+  <block id="d7f435fa7cf0bd0868423fe3be23c07e" category="list-text">根据您的授权要求创建自定义角色绑定。</block>
+  <block id="4759a5a8a6e530a07d366d458377d18b" category="list-text">创建名为`oc-clusterrolebind.yaml`的`ClusterRoleBindingm`文件。</block>
+  <block id="28f58929cb9b848d6403270c1e3c1c7b" category="list-text">根据需要为集群配置RBAC授权。</block>
+  <block id="0b644a2f3f62a8ba3f0ed9c3194a6f5d" category="paragraph">授予完全管理员授权并启用Cloud Manager以安装Astra Trident。</block>
+  <block id="c6c2bc2133c73ae2516508de9a2b5869" category="list-text">应用集群角色绑定：</block>
+  <block id="b6e00a7dda090ccd5afd1c904d80548c" category="list-text">列出服务帐户密码，将 ` &lt;context&gt;` 替换为适用于您的安装的正确上下文：</block>
+  <block id="f087976277d273660b942918b43af841" category="paragraph">输出的结尾应类似于以下内容：</block>
+  <block id="34e6e63f528ac4e4d0300281b4ba2af5" category="paragraph">`sec白 烟` 数组中每个元素的索引均以 0 开头。在上面的示例中、`oc-service-account-dockercfg-vhz87`的索引为0、`oc-service-account-token-r59krs`的索引为1。在输出中，记下包含 "token" 一词的服务帐户名称的索引。</block>
+  <block id="d3727d544efa902d0381ec79cec3d488" category="list-text">按如下所示生成 kubeconfig ：</block>
+  <block id="ed6be01d66e94b422222a328f085d0bc" category="list-text">创建 `create-kubeconfig.sh` 文件。将以下脚本开头的 `token_index` 替换为正确的值。</block>
+  <block id="7d164f3971b504d6203cf274cc77dd35" category="list-text">获取用于将其应用于 Kubernetes 集群的命令。</block>
+  <block id="922c92b70dc30bbc8f03dd7e7c4abf3d" category="paragraph">您将使用生成的`kubeconfig-sa`文件将OpenShift集群添加到Cloud Manager中。</block>
+  <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上的Kubernetes集群</block>
+  <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">在OpenShift上添加集群</block>
 </blocks>

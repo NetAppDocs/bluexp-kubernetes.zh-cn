@@ -18,6 +18,8 @@ indexpage:
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud 上的 Kubernetes 集群
       url: "/requirements/kubernetes-reqs-gke.html"
+    - title: OpenShift上的Kubernetes集群
+      url: "/requirements/kubernetes-reqs-openshift.html"
   - title: 添加 Kubernetes 集群
     links:
     - title: 在 AWS 上添加集群
@@ -26,6 +28,8 @@ indexpage:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: 在 Google Cloud 上添加集群
       url: "/task/task-kubernetes-discover-gke.html"
+    - title: 在OpenShift上添加集群
+      url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理 Kubernetes 集群
     links:
     - title: 安装 Astra Trident

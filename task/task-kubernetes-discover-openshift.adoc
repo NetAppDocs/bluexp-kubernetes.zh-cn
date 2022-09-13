@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-openshift.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
+summary: 将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。 
+---
+= 将OpenShift集群添加到Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。
+
+
+
+== 导入集群
+
+您可以使用 Kubernetes 配置文件导入自管理的 Kubernetes 集群。
+
+在添加OpenShift集群之前、您需要：
+
+* 您在中创建的`kubeconfig-sa`文件 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["创建kubeconfig文件"]。
+* 集群的公有 证书颁发机构(例如ca.crt)、客户端密钥(例如tls.key)和客户端证书(例如tls.crt)文件。
+
+
+.步骤
+. 在*画布*上、选择*添加工作环境*。
+. 选择您的云提供程序并选择* Kubernetes Cluster*、然后选择*下一步*。
+. 选择*导入集群*、然后选择*下一步*。
+. 上传您在中创建的`kubeconfig-sa`文件 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["创建kubeconfig文件"]。选择Kubernetes集群并选择*下一步*。
++
+image:screenshot-k8s-aks-import-1.png["导入 Kubernetes 集群页面的屏幕截图，其中包含配置文件和可用集群表。"]
+
+. 上传集群证书。
++
+image:screenshot-oc-certs.png["集群证书上传屏幕的屏幕截图。"]
+
+
+
+Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
