@@ -24,7 +24,7 @@ summary: 将自管理的OpenShift集群导入到Cloud Manager中、以便开始�
 
 在添加OpenShift集群之前、您需要：
 
-* 您在中创建的`kubeconfig-sa`文件 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["创建kubeconfig文件"]。
+* 您在中创建的`kubeconfig-sa`文件 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["创建kubeconfig文件"]。
 * 集群的公有 证书颁发机构(例如ca.crt)、客户端密钥(例如tls.key)和客户端证书(例如tls.crt)文件。
 
 
@@ -32,7 +32,7 @@ summary: 将自管理的OpenShift集群导入到Cloud Manager中、以便开始�
 . 在*画布*上、选择*添加工作环境*。
 . 选择您的云提供程序并选择* Kubernetes Cluster*、然后选择*下一步*。
 . 选择*导入集群*、然后选择*下一步*。
-. 上传您在中创建的`kubeconfig-sa`文件 link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["创建kubeconfig文件"]。选择Kubernetes集群并选择*下一步*。
+. 上传您在中创建的`kubeconfig-sa`文件 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["创建kubeconfig文件"]。选择Kubernetes集群并选择*下一步*。
 +
 image:screenshot-k8s-aks-import-1.png["导入 Kubernetes 集群页面的屏幕截图，其中包含配置文件和可用集群表。"]
 
