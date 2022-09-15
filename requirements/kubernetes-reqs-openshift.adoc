@@ -20,11 +20,7 @@ summary: 您可以使用Cloud Manager添加和管理自管理OpenShift Kubernete
 
 == 要求
 
-Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从 Cloud Manager 安装 Astra Trident 。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
-
-
-要升级 Astra Trident ， link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["使用操作员升级"^]。
-
+Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从Cloud Manager安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
 Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存储。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
 Cloud Manager Connector:: 要导入和管理Kubernetes集群、需要使用Cloud Manager Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：
 +
@@ -36,7 +32,7 @@ Cloud Manager Connector:: 要导入和管理Kubernetes集群、需要使用Cloud
 
 --
 网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。
-具有RBAC授权的Kubernetes配置文件(kubeconfig):: 要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。 <<Create a kubeconfig file>>。
+具有RBAC授权的Kubernetes配置文件(kubeconfig):: 要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。  a kubeconfig file。
 +
 --
 * 备份和还原：备份和还原仅需要基本授权。

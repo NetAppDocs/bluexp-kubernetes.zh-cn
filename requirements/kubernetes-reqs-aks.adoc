@@ -23,15 +23,11 @@ NOTE: 本主题使用 _Kubernetes cluster_ ，其中对于 AKS 和自管理 Kube
 
 == 要求
 
-Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从 Cloud Manager 安装 Astra Trident 。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
-
-
-要升级 Astra Trident ， link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["使用操作员升级"^]。
-
+Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从Cloud Manager安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
 Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存储。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
-Cloud Manager Connector:: Connector 必须使用所需权限在 Azure 中运行。 <<Prepare a Connector,在下方了解更多信息>>。
-网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。 <<Review networking requirements,在下方了解更多信息>>。
-RBAC 授权:: Cloud Manager 支持使用和不使用 Active Directory 的已启用 RBAC 的集群。必须在每个 Azure 集群上授权 Cloud Manager Connector 角色。 <<Set up RBAC authorization,在下方了解更多信息>>。
+Cloud Manager Connector:: Connector 必须使用所需权限在 Azure 中运行。  a Connector,在下方了解更多信息。
+网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。  networking requirements,在下方了解更多信息。
+RBAC 授权:: Cloud Manager 支持使用和不使用 Active Directory 的已启用 RBAC 的集群。必须在每个 Azure 集群上授权 Cloud Manager Connector 角色。  up RBAC authorization,在下方了解更多信息。
 
 
 
