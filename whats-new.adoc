@@ -14,7 +14,13 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 
 [role="lead"]
-在Cloud Manager (以前称为Cloud Manager)中了解Kubernetes中的新增功能。
+了解BlueXP中Kubernetes中的新增功能(以前称为Cloud Manager)。
+
+
+
+== 2022年10月30日
+
+时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
 
 
 

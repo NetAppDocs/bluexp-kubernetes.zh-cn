@@ -398,8 +398,6 @@
   <block id="7c371426945f4674b445faa898f442c8" category="list-text">上传集群证书。</block>
   <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">集群证书上传屏幕的屏幕截图。</block>
   <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11fdcf36bc2c8b5bfd93e6121adc30e4" category="list-text">选择*文件系统*或*块*存储。对于*块*存储、选择文件系统类型(fstype)。</block>
-  <block id="1688bddc71d0ab83d2459fc2d264cbe0" category="paragraph"><block ref="1688bddc71d0ab83d2459fc2d264cbe0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="78f4011ce4eec11823de490a29f344e7" category="inline-link-macro">AWS连接器</block>
   <block id="cffb555a0390870f6d957bab2b87008e" category="list-text"><block ref="cffb555a0390870f6d957bab2b87008e" category="inline-link-macro-rx"></block></block>
   <block id="625f50cfccef81e43215d5f35b6122fe" category="inline-link-macro">Azure连接器</block>
@@ -596,9 +594,18 @@
   <block id="22a7b4f5dd259ae78aeff6a22466a375" category="paragraph">将Kubernetes集群添加到BlueXP后、您可以从BlueXP资源页面管理这些集群。</block>
   <block id="11f9aaa089264e1c493971bc87da74b1" category="summary">了解BlueXP中Kubernetes的新增功能。</block>
   <block id="87675ab25dc7f237387bffff0f0b5b0a" category="doc">BlueXP中的Kubernetes新增功能</block>
-  <block id="04e551640dca82bec4aedafe555e0564" category="paragraph">在Cloud Manager (以前称为Cloud Manager)中了解Kubernetes中的新增功能。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="20047fa95487365e55e0fe5ef4fc9154" category="sidebar">获取有关BlueXP的帮助</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
+  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">选择*文件系统*或*块*存储。</block>
+  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">对于*块*存储、选择文件系统类型(fstype)</block>
+  <block id="0755724e46e8d77a91d98ad969973966" category="paragraph"><block ref="0755724e46e8d77a91d98ad969973966" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e11f0b59da480c27633ea9deb279246c" category="list-text">对于*块*或*文件系统*存储、您可以选择启用存储类经济性。</block>
+  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">显示配置块或文件K8s存储类时存储经济性选项的屏幕截图。</block>
+  <block id="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="paragraph"><block ref="ffa448ca3a4e90a2baa6bcb5e38dfb5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45c054bee9c262cc9a4a08ee09307ceb" category="admonition">使用存储类经济模式时、不支持备份和还原。</block>
+  <block id="be35568ff63793a98ea03ab0d34ae986" category="paragraph">了解BlueXP中Kubernetes中的新增功能(以前称为Cloud Manager)。</block>
+  <block id="6fc9f5ba6febd413f8f3db3fdd777f58" category="section-title">2022年10月30日</block>
+  <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、现在、您可以为块或文件系统存储启用存储类经济性。</block>
 </blocks>
