@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
-summary: 您可以发现 Kubernetes 集群或将其导入到 Cloud Manager 中，以便将永久性卷备份到 Google Cloud 。 
+summary: 您可以发现Kubernetes集群或将其导入到BlueXP中、以便将永久性卷备份到Google Cloud。 
 ---
-= 将 Google Cloud Kubernetes 集群添加到 Cloud Manager
+= 将Google Cloud Kubernetes集群添加到BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 您可以发现 Kubernetes 集群或将其导入到 Cloud Manager 中�
 
 
 [role="lead"]
-您可以发现 Kubernetes 集群或将其导入到 Cloud Manager 中，以便将永久性卷备份到 Google Cloud 。
+您可以发现Kubernetes集群或将其导入到BlueXP中、以便将永久性卷备份到Google Cloud。
 
 
 
@@ -39,9 +39,9 @@ image:screenshot-k8s-gke-discover.png["\" 发现 Kubernetes 集群 \" 页面的�
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。
 
-image:screenshot-k8s-gke-canvas.png["Cloud Manager 中的 Canvas 的屏幕截图，其中显示了 Kubernetes 集群。"]
+image:screenshot-k8s-gke-canvas.png["BlueXP中的\"画布\"屏幕截图、其中显示了Kubernetes集群。"]
 
 
 
@@ -65,4 +65,4 @@ image:screenshot-k8s-gke-import-1.png["导入 Kubernetes 集群页面的屏幕�
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
-summary: 将 Amazon Elastic Kubernetes Service （ Amazon EKS ）集群添加到 Cloud Manager 中，以便开始将永久性卷备份到 Amazon S3 。 
+summary: '将Amazon Elastic Kubernetes Service (Amazon EKS)集群添加到BlueXP、以便开始将永久性卷备份到Amazon S3。' 
 ---
-= 将 Amazon Kubernetes 集群添加到 Cloud Manager
+= 将Amazon Kubernetes集群添加到BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 将 Amazon Elastic Kubernetes Service （ Amazon EKS ）集群添加到
 
 
 [role="lead"]
-您可以发现 Kubernetes 集群或将其导入到 Cloud Manager 中，以便将永久性卷备份到 Amazon S3 。
+您可以发现Kubernetes集群或将其导入到BlueXP中、以便将永久性卷备份到Amazon S3。
 
 
 
@@ -35,9 +35,9 @@ image:screenshot-discover-kubernetes-aws-2.png["\"Discover a Kubernetes Cluster\
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。
 
-image:screenshot-kubernetes-canvas.png["Cloud Manager 中的 Canvas 的屏幕截图，其中显示了 Kubernetes 集群。"]
+image:screenshot-kubernetes-canvas.png["BlueXP中的\"画布\"屏幕截图、其中显示了Kubernetes集群。"]
 
 
 
@@ -56,4 +56,4 @@ image:screenshot-k8s-aks-import-1.png["导入 Kubernetes 集群页面的屏幕�
 . 选择 Kubernetes 集群，然后单击 * 下一步 * 。
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。

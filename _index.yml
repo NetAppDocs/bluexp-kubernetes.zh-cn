@@ -1,6 +1,6 @@
 ---
 indexpage:
-  lead: 将受管 Kubernetes 集群添加到 Cloud Manager 中以进行高级数据管理。
+  lead: 将受管Kubernetes集群添加到BlueXP中以进行高级数据管理。
   tiles:
   - title: 入门
     links:
@@ -42,7 +42,7 @@ indexpage:
       url: "/task/task-k8s-manage-remove-cluster.html"
     - title: 启用数据服务
       url: "/task/task-kubernetes-enable-services.html"
-  - title: 获取有关 Cloud Manager 的帮助
+  - title: 获取有关BlueXP的帮助
     links:
     - title: 注册以获得支持
       url: "/support/task-support-registration.html"

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /requirements/kubernetes-reqs-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
-summary: 您可以使用Cloud Manager添加和管理自管理OpenShift Kubernetes集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。 
+summary: 您可以使用BlueXP添加和管理自管理OpenShift Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。 
 ---
 = OpenShift中的Kubernetes集群的要求
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 您可以使用Cloud Manager添加和管理自管理OpenShift Kubernete
 
 
 [role="lead"]
-您可以使用Cloud Manager添加和管理自管理OpenShift Kubernetes集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。
+您可以使用BlueXP添加和管理自管理OpenShift Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。
 
 
 
 == 要求
 
-Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从Cloud Manager安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
+Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从BlueXP安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
 Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存储。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
-Cloud Manager Connector:: 要导入和管理Kubernetes集群、需要使用Cloud Manager Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：
+BlueXP连接器:: 要导入和管理Kubernetes集群、需要使用BlueXP Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：
 +
 --
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWS连接器"]
@@ -36,11 +36,11 @@ Cloud Manager Connector:: 要导入和管理Kubernetes集群、需要使用Cloud
 +
 --
 * 备份和还原：备份和还原仅需要基本授权。
-* 添加存储类：要使用Cloud Manager添加存储类并监控集群中对后端的更改、需要扩展授权。
-* 安装Astra Trident：要安装Astra Trident、您需要为Cloud Manager提供完全授权。
+* 添加存储类：要使用BlueXP添加存储类并监控集群中对后端的更改、需要扩展授权。
+* 安装Astra Trident：要安装Astra Trident、您需要为BlueXP提供完全授权。
 +
 
-NOTE: 安装 Astra Trident 时， Cloud Manager 会安装 Astra Trident 后端和 Kubernetes 密钥，其中包含 Astra Trident 与存储集群通信所需的凭据。
+NOTE: 安装Astra Trident时、BlueXP会安装Astra Trident后端和Kubernetes密钥、其中包含Astra Trident与存储集群通信所需的凭据。
 
 
 
@@ -51,7 +51,7 @@ NOTE: 安装 Astra Trident 时， Cloud Manager 会安装 Astra Trident 后端�
 
 == 创建kubeconfig文件
 
-使用OpenShift CLI创建一个kubeconfig文件以导入到Cloud Manager中。
+使用OpenShift命令行界面创建一个kubeconfig文件以导入到BlueXP中。
 
 .步骤
 . 使用管理员用户通过公有 URL使用`oc login`登录到OpenShift命令行界面。
@@ -174,7 +174,7 @@ subjects:
 --
 .存储类
 --
-添加扩展授权以使用 Cloud Manager 添加存储类。
+添加扩展授权以使用BlueXP添加存储类。
 
 [source, yaml]
 ----
@@ -240,7 +240,7 @@ subjects:
 --
 .安装 Trident
 --
-授予完全管理员授权并启用Cloud Manager以安装Astra Trident。
+授予完全管理员授权并启用BlueXP以安装Astra Trident。
 
 [source, cli]
 ----
@@ -368,4 +368,4 @@ source create-kubeconfig.sh
 
 
 
-您将使用生成的`kubeconfig-sa`文件将OpenShift集群添加到Cloud Manager中。
+您将使用生成的 `kubeconfig-sa` 用于将OpenShift集群添加到BlueXP的文件。

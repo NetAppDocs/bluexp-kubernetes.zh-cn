@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-kubernetes.html 
-keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support 
+keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support, cloud manager 
 summary: Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astra Trident 与 Kubernetes 及其永久性卷框架本机集成，可从运行任意 NetApp 存储平台组合的系统无缝配置和管理卷。 
 ---
-= Kubernetes 在 Cloud Manager 中进行数据管理
+= Kubernetes在BlueXP中进行数据管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astr
 
 == 功能
 
-通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用Cloud Manager直接管理Kubernetes集群。
+通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用BlueXP (以前称为Cloud Manager)直接管理Kubernetes集群。
 
 * 安装或升级Astra Trident。
 * 在混合云基础架构中添加和管理集群。
@@ -32,7 +32,7 @@ Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astr
 
 == 支持的 Kubernetes 部署
 
-Cloud Manager 支持在以下环境中运行的受管 Kubernetes 集群：
+BlueXP支持在以下环境中运行的受管Kubernetes集群：
 
 * link:./requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service （ Amazon EKS ）"]
 * link:./requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service （ AKS ）"]
@@ -45,7 +45,7 @@ Cloud Manager 支持在以下环境中运行的受管 Kubernetes 集群：
 
 Astra Trident的四个最新版本之一 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident操作符部署"^] 为必填项。
 
-您可以直接从Cloud Manager安装或升级到最新版本的Astra Trident。
+您可以直接从BlueXP安装或升级到最新版本的Astra Trident。
 
 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看Astra Trident前提条件"^]
 
@@ -59,4 +59,4 @@ link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html
 
 == 成本
 
-在 Cloud Manager 中发现您的 Kubernetes 集群不收取任何费用，但在使用 Cloud Backup Service 备份永久性卷时，系统会向您收取费用。
+在BlueXP中、_discover_您的Kubernetes集群无需付费、但在使用Cloud Backup Service 备份永久性卷时、您需要付费。

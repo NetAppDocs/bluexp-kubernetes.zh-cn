@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /requirements/kubernetes-reqs-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support 
-summary: 您可以使用 Cloud Manager 在 Google 中添加和管理受管 Google Kubernetes Engine 集群（ GKEE ）和自管 Kubernetes 集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。 
+summary: '您可以使用BlueXP在Google中添加和管理受管Google Kubernetes Engine集群(GKEE)和自管Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。' 
 ---
 = Google Cloud 中的 Kubernetes 集群的要求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以使用 Cloud Manager 在 Google 中添加和管理受管 Googl
 
 
 [role="lead"]
-您可以使用 Cloud Manager 在 Google 中添加和管理受管 Google Kubernetes Engine （ GKEE ）集群和自管 Kubernetes 集群。在将集群添加到 Cloud Manager 之前，请确保满足以下要求。
+您可以使用BlueXP在Google中添加和管理受管Google Kubernetes Engine (GKEE)集群和自管Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。
 
 
 NOTE: 本主题使用 _Kubernetes cluster_ ，其中 GKE- 和自管理 Kubernetes 集群的配置相同。在配置不同的位置指定集群类型。
@@ -23,18 +23,18 @@ NOTE: 本主题使用 _Kubernetes cluster_ ，其中 GKE- 和自管理 Kubernete
 
 == 要求
 
-Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从Cloud Manager安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前
-Cloud Volumes ONTAP:: Cloud Volumes ONTAP 必须与 Kubernetes 集群位于同一租户帐户，工作空间和连接器下的 Cloud Manager 中。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
-Cloud Manager Connector:: 必须使用所需权限在 Google 中运行 Connector 。  a Connector,在下方了解更多信息。
+Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从BlueXP安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前
+Cloud Volumes ONTAP:: Cloud Volumes ONTAP 必须与Kubernetes集群位于同一租户帐户、工作空间和连接器下的BlueXP中。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
+BlueXP连接器:: 必须使用所需权限在 Google 中运行 Connector 。  a Connector,在下方了解更多信息。
 网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。  networking requirements,在下方了解更多信息。
-RBAC 授权:: Cloud Manager 支持使用和不使用 Active Directory 的已启用 RBAC 的集群。必须在每个 GKE 集群上授权 Cloud Manager Connector 角色。  up RBAC authorization,在下方了解更多信息。
+RBAC 授权:: 无论是否使用Active Directory、BlueXP都支持启用了RBAC的集群。必须在每个GKE集群上授权BlueXP Connector角色。  up RBAC authorization,在下方了解更多信息。
 
 
 
 
 == 准备连接器
 
-要发现和管理 Kubernetes 集群，需要使用 Google 中的 Cloud Manager Connector 。您需要创建新的 Connector 或使用具有所需权限的现有 Connector 。
+要发现和管理Kubernetes集群、需要使用Google中的BlueXP Connector。您需要创建新的 Connector 或使用具有所需权限的现有 Connector 。
 
 
 
@@ -42,7 +42,7 @@ RBAC 授权:: Cloud Manager 支持使用和不使用 Active Directory 的已启�
 
 按照以下链接之一中的步骤进行操作。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["从 Cloud Manager 创建 Connector"^] 建议
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["从BlueXP创建连接器"^] 建议
 * link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在现有 Linux 主机上安装 Connector"^]
 
 
@@ -92,17 +92,17 @@ RBAC 验证仅在启用了 Active Directory （ AD ）的 Kubernetes 集群上�
 您需要在每个 Kubernetes 集群上授权 Connector 角色，以便 Connector 可以发现和管理集群。
 
 备份和还原:: 备份和还原只需要基本授权。
-添加存储类:: 要使用Cloud Manager添加存储类并监控集群中的后端更改、需要扩展授权。
-安装 Astra Trident:: 要安装 Astra Trident ，您需要为 Cloud Manager 提供完全授权。
+添加存储类:: 要使用BlueXP添加存储类并监控集群中的后端更改、需要扩展授权。
+安装 Astra Trident:: 要安装Astra Trident、您需要为BlueXP提供完全授权。
 +
 --
 
-NOTE: 安装 Astra Trident 时， Cloud Manager 会安装 Astra Trident 后端和 Kubernetes 密钥，其中包含 Astra Trident 与存储集群通信所需的凭据。
+NOTE: 安装Astra Trident时、BlueXP会安装Astra Trident后端和Kubernetes密钥、其中包含Astra Trident与存储集群通信所需的凭据。
 
 --
 
 
-要在 YAML 文件中配置 ``s子对象： name ：`` ，您需要知道 Cloud Manager 的唯一 ID 。
+以进行配置 ``subjects: name:`` 在YAML文件中、您需要知道BlueXP的唯一ID。
 
 您可以通过以下两种方式之一找到唯一 ID ：
 
@@ -204,7 +204,7 @@ roleRef:
 --
 .存储类
 --
-添加扩展授权以使用 Cloud Manager 添加存储类。
+添加扩展授权以使用BlueXP添加存储类。
 
 [source, yaml]
 ----
@@ -270,7 +270,7 @@ roleRef:
 --
 .安装 Trident
 --
-使用命令行提供完全授权并启用 Cloud Manager 以安装 Astra Trident 。
+使用命令行提供完全授权并启用BlueXP以安装Astra Trident。
 
 [source, cli]
 ----

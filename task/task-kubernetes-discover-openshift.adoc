@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
-summary: 将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。 
+summary: 将自管理的OpenShift集群导入到BlueXP中、以便开始将永久性卷备份到云提供商。 
 ---
-= 将OpenShift集群添加到Cloud Manager
+= 将OpenShift集群添加到BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 将自管理的OpenShift集群导入到Cloud Manager中、以便开始�
 
 
 [role="lead"]
-将自管理的OpenShift集群导入到Cloud Manager中、以便开始将永久性卷备份到云提供商。
+将自管理的OpenShift集群导入到BlueXP中、以便开始将永久性卷备份到云提供商。
 
 
 
@@ -42,4 +42,4 @@ image:screenshot-oc-certs.png["集群证书上传屏幕的屏幕截图。"]
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。

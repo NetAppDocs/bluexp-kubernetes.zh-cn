@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-azure.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support 
-summary: 将 Kubernetes 集群添加到 Cloud Manager 中，以便开始将永久性卷备份到 Azure 。 
+summary: 将Kubernetes集群添加到BlueXP、以便开始将永久性卷备份到Azure。 
 ---
-= 将 Azure Kubernetes 集群添加到 Cloud Manager
+= 将Azure Kubernetes集群添加到BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 将 Kubernetes 集群添加到 Cloud Manager 中，以便开始将永�
 
 
 [role="lead"]
-您可以发现 Kubernetes 集群或将其导入到 Cloud Manager 中，以便将永久性卷备份到 Azure 。
+您可以发现Kubernetes集群或将其导入到BlueXP、以便将永久性卷备份到Azure。
 
 
 
@@ -35,9 +35,9 @@ image:screenshot-k8s-aks-discover.png["\" 发现 Kubernetes 集群 \" 页面的�
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。
 
-image:screenshot-k8s-aks-canvas.png["Cloud Manager 中的 Canvas 的屏幕截图，其中显示了 Kubernetes 集群。"]
+image:screenshot-k8s-aks-canvas.png["BlueXP中的\"画布\"屏幕截图、其中显示了Kubernetes集群。"]
 
 
 
@@ -65,4 +65,4 @@ image:screenshot-k8s-aks-import-2.png["用于上传证书颁发机构，客户�
 
 
 
-Cloud Manager 会将 Kubernetes 集群添加到 Canvas 。
+BlueXP会将Kubernetes集群添加到Canvas。

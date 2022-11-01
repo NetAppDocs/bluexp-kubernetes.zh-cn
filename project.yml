@@ -69,6 +69,6 @@ sidebar:
   - title: 法律声明
     url: "/legal-notices.html"
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 所有 Cloud Manager 文档
+  sidebar_label: 所有BlueXP文档

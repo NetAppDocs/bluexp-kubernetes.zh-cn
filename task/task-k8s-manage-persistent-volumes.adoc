@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-persistent-volumes.html 
 keywords: kubernetes, k8s, view persistent volume 
-summary: 将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 Cloud Manager 查看连接的永久性卷。 
+summary: 将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP查看连接的永久性卷。 
 ---
 = 查看永久性卷
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 Cloud
 
 
 [role="lead"]
-将受管Kubernetes集群添加到Canvas后、您可以使用Cloud Manager查看永久性卷。
+将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP查看永久性卷。
 
 
-NOTE: Cloud Manager可监控Kubernetes集群中对后端的更改、并在添加新卷后更新永久性卷表。如果在集群上配置了自动备份、则会在新的永久性卷上自动启用备份。
+NOTE: BlueXP会监控Kubernetes集群中对后端的更改、并在添加新卷后更新永久性卷表。如果在集群上配置了自动备份、则会在新的永久性卷上自动启用备份。
 
 .步骤
 . 双击 Canvas 上的 Kubernetes 工作环境或单击 * 进入工作环境 * 。

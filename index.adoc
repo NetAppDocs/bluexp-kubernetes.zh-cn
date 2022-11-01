@@ -2,7 +2,7 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-summary: 将受管 Kubernetes 集群添加到 Cloud Manager 中以进行高级数据管理。 
+summary: 将受管Kubernetes集群添加到BlueXP中以进行高级数据管理。 
 ---
 = Kubernetes 集群文档
 :hardbreaks:

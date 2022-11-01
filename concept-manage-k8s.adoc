@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-manage-k8s.html 
 keywords: overview, manage, k8s, kubernetes 
-summary: 您可以使用 Cloud Manager 安装 Astra Trident ，配置存储类，删除集群以及启用数据服务。 
+summary: 您可以使用BlueXP安装Astra Trident、配置存储类、删除集群以及启用数据服务。 
 ---
 = 管理 Kubernetes 集群
 :hardbreaks:
@@ -13,16 +13,16 @@ summary: 您可以使用 Cloud Manager 安装 Astra Trident ，配置存储类�
 :imagesdir: ./media/
 
 
-您可以使用Cloud Manager安装或升级Astra Trident、配置存储类、删除集群以及启用数据服务。
+您可以使用BlueXP安装或升级Astra Trident、配置存储类、删除集群以及启用数据服务。
 
 
-NOTE: 不支持使用`tridentctl`部署的Astra Trident。如果您使用`tridentctl`部署了Astra Trident、则无法使用Cloud Manager管理Kubernetes集群。您必须 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["使用`tridentctl`卸载"^] 并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./tasks/task-k8s-manage-trident.html["使用Cloud Manager"]。
+NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./tasks/task-k8s-manage-trident.html["使用BlueXP"]。
 
 
 
 == 功能
 
-将 Kubernetes 集群添加到 Cloud Manager 后，您可以从资源页面管理这些集群。要打开资源页面，请双击 Canvas 上的 Kubernetes 工作环境。
+将Kubernetes集群添加到BlueXP后、您可以从资源页面管理这些集群。要打开资源页面，请双击 Canvas 上的 Kubernetes 工作环境。
 
 image:screenshot-k8s-resource-page.png["显示集群详细信息的 Kubernetes 资源页面的屏幕截图。"]
 

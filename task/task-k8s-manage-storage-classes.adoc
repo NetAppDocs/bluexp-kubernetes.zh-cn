@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-storage-classes.html 
 keywords: kubernetes, k8s, add storage class, remove storage class 
-summary: 将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 Cloud Manager 管理存储类。 
+summary: 将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP管理存储类。 
 ---
 = 管理存储类
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 Cloud
 
 
 [role="lead"]
-将受管Kubernetes集群添加到Canvas后、您可以使用Cloud Manager管理存储类。
+将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP管理存储类。
 
 
 NOTE: 如果未定义存储类、则集群将显示需要执行操作。双击Canvas上的集群将打开操作页面以添加存储类。
