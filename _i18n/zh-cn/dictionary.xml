@@ -232,7 +232,6 @@
   <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">将受管 Kubernetes 集群添加到 Canvas 后，您可以使用 NetApp 云数据服务进行高级数据管理。</block>
   <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">将 NetApp 云数据服务与 Kubernetes 集群结合使用</block>
   <block id="79e470c48afbbe1fa9e042e6403d2459" category="doc">开始使用 Kubernetes 集群</block>
-  <block id="6c5ac2a580024aab98e753e5c4dc264c" category="paragraph">按照以下步骤快速入门。</block>
   <block id="2fadcb7c66778a6e996282a9d85d69d3" category="paragraph">确保您的环境满足集群类型的前提条件。</block>
   <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link-macro">添加 Amazon Kubernetes 集群</block>
   <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link-macro">添加 Azure Kubernetes 集群</block>
@@ -488,7 +487,6 @@
   <block id="37501597ef11ef33ee3ccd735a467231" category="admonition">使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不支持。如果您使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您不能使用BlueXP管理Kubernetes集群。您必须 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 并重新安装 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或 <block ref="966d0d33f20c27bebc66ad66d76f5da9" category="inline-link-macro-rx"></block>。</block>
   <block id="f1353ecc73ca9ea978933e3884b9ce99" category="paragraph">将Kubernetes集群添加到BlueXP后、您可以从资源页面管理这些集群。要打开资源页面，请双击 Canvas 上的 Kubernetes 工作环境。</block>
   <block id="8f696d5a5f9b66b14465e6edd8c0ec21" category="doc">Kubernetes在BlueXP中进行数据管理</block>
-  <block id="e961fd0a6b508c0d0618d0f893d177ba" category="paragraph">通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用BlueXP (以前称为Cloud Manager)直接管理Kubernetes集群。</block>
   <block id="8b4d25df20eadf8dd52c5fe961669cb3" category="paragraph">BlueXP支持在以下环境中运行的受管Kubernetes集群：</block>
   <block id="76bef843768c13f5b026423fd5e3f21d" category="paragraph">您可以直接从BlueXP安装或升级到最新版本的Astra Trident。</block>
   <block id="3d2d606b1ba09a7c7d879ebe24c66f00" category="paragraph">在BlueXP中、_discover_您的Kubernetes集群无需付费、但在使用Cloud Backup Service 备份永久性卷时、您需要付费。</block>
@@ -511,9 +509,7 @@
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">了解如何向NetApp注册</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">将NSS帐户添加到BlueXP</block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户一起添加。</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
@@ -537,17 +533,14 @@
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp的新品牌</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">从支持注册页面找到您的Cloud Manager帐户ID序列号。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支持注册站点</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">导航到<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 并选择*我不是NetApp注册客户*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填写必填字段(带有红色星号的字段)。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">复制上述第2步中的Cloud Manager帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">在电子邮件中确认操作。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">请务必复制上面用于序列号字段的Cloud Manager帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
   <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">拥有NetApp 支持站点 帐户后、您可以导航到BlueXP以添加此NSS帐户以供将来注册。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
@@ -608,4 +601,13 @@
   <block id="be35568ff63793a98ea03ab0d34ae986" category="paragraph">了解BlueXP中Kubernetes中的新增功能(以前称为Cloud Manager)。</block>
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、现在、您可以为块或文件系统存储启用存储类经济性。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
+  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
+  <block id="7caa90f14b457665f7fa695360ecb815" category="paragraph">通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用直接管理Kubernetes集群 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)。</block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
+  <block id="485af08837450e02af336c55571fef57" category="paragraph">将Kubernetes集群添加到BlueXP中、以便通过几个步骤进行高级数据管理。</block>
+  <block id="c0a71f242f9a20837eeb221262b5ec52" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> 您只需几个步骤即可开始管理Kubernetes集群。</block>
 </blocks>
