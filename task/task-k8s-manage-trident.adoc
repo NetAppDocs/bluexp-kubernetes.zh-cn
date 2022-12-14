@@ -41,4 +41,5 @@ image:screenshot-k8s-upgrade-trident.png["Astra Trident 升级过程的屏幕截
 
 
 
+.结果
 安装了最新版本的 Astra Trident 。现在，您可以添加存储类。

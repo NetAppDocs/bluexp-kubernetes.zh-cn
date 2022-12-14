@@ -35,6 +35,7 @@ image:screenshot-discover-kubernetes-aws-2.png["\"Discover a Kubernetes Cluster\
 
 
 
+.结果
 BlueXP会将Kubernetes集群添加到Canvas。
 
 image:screenshot-kubernetes-canvas.png["BlueXP中的\"画布\"屏幕截图、其中显示了Kubernetes集群。"]
@@ -56,4 +57,5 @@ image:screenshot-k8s-aks-import-1.png["导入 Kubernetes 集群页面的屏幕�
 . 选择 Kubernetes 集群，然后单击 * 下一步 * 。
 
 
+.结果
 BlueXP会将Kubernetes集群添加到Canvas。

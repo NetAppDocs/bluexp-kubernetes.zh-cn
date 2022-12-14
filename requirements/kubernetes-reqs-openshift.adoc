@@ -32,7 +32,7 @@ BlueXP连接器:: 要导入和管理Kubernetes集群、需要使用BlueXP Connec
 
 --
 网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。
-具有RBAC授权的Kubernetes配置文件(kubeconfig):: 要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。  a kubeconfig file。
+具有RBAC授权的Kubernetes配置文件(kubeconfig):: 要导入OpenShift集群、您需要一个kubeconfig文件、该文件具有启用不同功能所需的RBAC授权。 <<创建kubeconfig文件>>。
 +
 --
 * 备份和还原：备份和还原仅需要基本授权。
@@ -368,4 +368,5 @@ source create-kubeconfig.sh
 
 
 
+.结果
 您将使用生成的 `kubeconfig-sa` 用于将OpenShift集群添加到BlueXP的文件。

@@ -25,9 +25,9 @@ NOTE: 本主题使用 _Kubernetes cluster_ ，其中对于 AKS 和自管理 Kube
 
 Astra Trident:: 需要使用四个最新版本的 Astra Trident 之一。您可以直接从BlueXP安装或升级Astra Trident。您应该 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["查看前提条件"^] 安装 Astra Trident 之前。
 Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存储。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["有关配置步骤，请转至 Astra Trident 文档"^]。
-BlueXP连接器:: Connector 必须使用所需权限在 Azure 中运行。  a Connector,在下方了解更多信息。
-网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。  networking requirements,在下方了解更多信息。
-RBAC 授权:: 无论是否使用Active Directory、BlueXP都支持启用了RBAC的集群。必须在每个Azure集群上授权BlueXP Connector角色。  up RBAC authorization,在下方了解更多信息。
+BlueXP连接器:: Connector 必须使用所需权限在 Azure 中运行。 <<准备连接器,在下方了解更多信息>>。
+网络连接:: Kubernetes 集群和 Connector 之间以及 Kubernetes 集群和 Cloud Volumes ONTAP 之间需要网络连接。 <<查看网络连接要求,在下方了解更多信息>>。
+RBAC 授权:: 无论是否使用Active Directory、BlueXP都支持启用了RBAC的集群。必须在每个Azure集群上授权BlueXP Connector角色。 <<设置 RBAC 授权,在下方了解更多信息>>。
 
 
 
@@ -119,6 +119,7 @@ NOTE: 安装Astra Trident时、BlueXP会安装Astra Trident后端和Kubernetes�
 --
 
 
+.开始之前
 您的 RBAC ``s对象： name ：`` 配置会根据您的 Kubernetes 集群类型稍有不同。
 
 * 如果要部署 * 受管 AKS 集群 * ，则需要为 Connector 的系统分配的受管身份提供对象 ID 。此 ID 可在 Azure 管理门户中使用。
@@ -128,6 +129,7 @@ image:screenshot-k8s-aks-obj-id.png["Azure 管理门户上系统分配的对象 
 * 如果要部署 * 自管理 Kubernetes 集群 * ，则需要任何授权用户的用户名。
 
 
+.步骤
 创建集群角色和角色绑定。
 
 . 根据您的授权要求创建包含以下文本的 YAML 文件。将 ``ssubjects ： kind ：`` 变量替换为您的用户名，将 ``ssubjects ： user ：`` 替换为系统分配的受管身份的对象 ID 或上述任何授权用户的用户名。

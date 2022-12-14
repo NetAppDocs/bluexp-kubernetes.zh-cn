@@ -49,6 +49,7 @@ image:screenshot-k8s-select-storage-class.png["显示为 Kubernetes 集群选择
 
 
 
+.结果
 您可以从 Kubernetes 集群的资源页面中单击以查看存储类。
 
 image:screenshot-k8s-view-storage-class.png["显示 Kubernetes 资源页面中 \" 查看存储类 \" 的屏幕截图。"]
@@ -63,6 +64,7 @@ image:screenshot-k8s-view-storage-class.png["显示 Kubernetes 资源页面中 \
 . 单击信息图标可查看工作环境的详细信息。
 
 
+.结果
 此时将打开工作环境详细信息面板。
 
 image:screenshot-k8s-info-storage-class.png["Kubernetes 集群工作环境详细信息的屏幕截图。"]
@@ -80,6 +82,7 @@ image:screenshot-k8s-default-storage-class.png["设置默认存储类的操作�
 
 
 
+.结果
 选定存储类设置为默认值。
 
 image:screenshot-k8s-default-set-storage-class.png["显示默认存储类的屏幕截图。"]
@@ -101,4 +104,5 @@ image:screenshot-k8s-remove-confirm-storage-class.png["用于删除存储类的�
 
 
 
+.结果
 此时将删除选定存储类。

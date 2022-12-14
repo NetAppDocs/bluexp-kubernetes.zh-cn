@@ -22,6 +22,7 @@ summary: 将自管理的OpenShift集群导入到BlueXP中、以便开始将永�
 
 您可以使用 Kubernetes 配置文件导入自管理的 Kubernetes 集群。
 
+.开始之前
 在添加OpenShift集群之前、您需要：
 
 * 您在中创建的`kubeconfig-sa`文件 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["创建kubeconfig文件"]。
@@ -42,4 +43,5 @@ image:screenshot-oc-certs.png["集群证书上传屏幕的屏幕截图。"]
 
 
 
+.结果
 BlueXP会将Kubernetes集群添加到Canvas。

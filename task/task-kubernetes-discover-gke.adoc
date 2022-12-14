@@ -39,6 +39,7 @@ image:screenshot-k8s-gke-discover.png["\" 发现 Kubernetes 集群 \" 页面的�
 
 
 
+.结果
 BlueXP会将Kubernetes集群添加到Canvas。
 
 image:screenshot-k8s-gke-canvas.png["BlueXP中的\"画布\"屏幕截图、其中显示了Kubernetes集群。"]
@@ -65,4 +66,5 @@ image:screenshot-k8s-gke-import-1.png["导入 Kubernetes 集群页面的屏幕�
 
 
 
+.结果
 BlueXP会将Kubernetes集群添加到Canvas。

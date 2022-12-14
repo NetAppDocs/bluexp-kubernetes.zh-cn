@@ -28,4 +28,5 @@ image:screenshot-k8s-confirm-remove-cluster.png["确认从工作空间中删除 
 
 
 
+.结果
 Kubernetes 集群将从工作空间中删除，并且在 Canvas 上不再可见。
