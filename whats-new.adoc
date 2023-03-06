@@ -18,6 +18,14 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 
 
+== 2023年3月5日
+
+* BlueXP中的Kubernetes现在支持Astra Trident 23.01。
+* 文档中对用户界面进行了改进、并更新了屏幕截图。
+
+
+
+
 == 2022年11月6日
 
 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
@@ -67,7 +75,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 
 == 2022年6月6日
 
-Cloud Manager现在支持将Amazon FSX for ONTAP 用作后端存储。
+Cloud Manager现在支持将适用于ONTAP 的Amazon FSX用作后端存储。
 
 
 

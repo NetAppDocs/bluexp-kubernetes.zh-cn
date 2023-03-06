@@ -24,7 +24,7 @@ summary: 您可以发现Kubernetes集群或将其导入到BlueXP中、以便将�
 
 .步骤
 . 在 * 画布 * 上，单击 * 添加工作环境 * 。
-. 选择 * Google Cloud Platform* > * Kubernetes Cluster* ，然后单击 * 下一步 * 。
+. 选择* Google Cloud Platform*>* Kubernetes Cluster*>* Discover *。
 +
 image:screenshot-discover-kubernetes-gke.png["添加工作环境页面的屏幕截图，显示已选择 Google Cloud Platform 和 Kubernetes Cluster 。"]
 
@@ -58,7 +58,7 @@ image:screenshot-k8s-gke-canvas.png["BlueXP中的\"画布\"屏幕截图、其中
 
 .步骤
 . 在 * 画布 * 上，单击 * 添加工作环境 * 。
-. 选择 * Google Cloud Platform* > * Kubernetes Cluster* ，然后单击 * 下一步 * 。
+. 选择* Google Cloud Platform*>* Kubernetes Cluster*>* Discover *。
 . 选择 * 导入集群 * ，然后单击 * 下一步 * 。
 . 上传 YAML 格式的 Kubernetes 配置文件。
 +

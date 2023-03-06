@@ -45,7 +45,7 @@ sidebar:
     - title: 在 Google Cloud 上添加集群
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
-    - title: 在OpenShift上添加集群
+    - title: 导入OpenShift集群
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理 Kubernetes 集群
     url: "/concept-manage-k8s.html"
