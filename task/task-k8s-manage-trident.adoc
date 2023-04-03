@@ -4,7 +4,7 @@ permalink: /task/task-k8s-manage-trident.html
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
 summary: 将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装或安装Astra Trident。需要使用四个最新版本的 Astra Trident 之一。 
 ---
-= 安装或升级Astra Trident
+= 管理 Astra Trident
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,32 @@ summary: 将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确�
 
 
 [role="lead"]
-将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装或安装Astra Trident或将其升级到最新版本。
-
-[NOTE]
-====
-* 如果未安装 Astra Trident ，或者安装了不兼容版本的 Astra Trident ，则集群将显示需要执行操作。
-* 需要使用Trident操作员(手动或使用Helm图表)部署的四个最新版本的Astra Trident之一。
-* 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或使用以下步骤。
+将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装、安装或升级Astra Trident到最新版本或卸载Astra Trident。
 
 
-====
+
+== 《BlueXP中的Astra Trident》
+
+将Kubernetes集群添加到BlueXP后、您可以从概述页面管理Astra Trident和Kubernetes集群。要打开概述页面、请双击Canvas上的Kubernetes工作环境。
+
+image:screenshot-k8s-resource-page.png["显示集群详细信息的 Kubernetes 资源页面的屏幕截图。"]
+
+
+
+=== 支持的Astra Trident版本
+
+需要使用Trident操作员(手动或使用Helm图表)部署的四个最新版本的Astra Trident之一。如果未安装 Astra Trident ，或者安装了不兼容版本的 Astra Trident ，则集群将显示需要执行操作。
+
+
+NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群或卸载Astra Trident。您必须  并使用手动重新安装Astra Trident link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident运算符"^] 或在BlueXP中使用 <<安装或升级Astra Trident>>。
+
 要了解有关 Astra Trident 的更多信息，请参见 link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident 文档"^]。
+
+
+
+== 安装或升级Astra Trident
+
+您可以在概述页面上查看Astra Trident安装状态和版本。如果尚未安装Astra Trident、或者安装了不兼容的版本、则可以使用BlueXP来管理。
 
 .步骤
 . 双击 Canvas 上的 Kubernetes 工作环境或单击 * 进入工作环境 * 。
@@ -37,9 +52,40 @@ image:screenshot-k8s-install-trident.png["K8s 资源页面的屏幕截图，显�
 +
 image:screenshot-k8s-upgrade-trident.png["Astra Trident 升级过程的屏幕截图。"]
 
++
+
+NOTE: 您不能使用BlueXP从21.01之前的Astra Trident版本进行升级。要从早期版本升级、请参见 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["使用操作员升级"^]。
+
 
 
 
 
 .结果
 安装了最新版本的 Astra Trident 。现在，您可以添加存储类。
+
+
+
+== 卸载 Astra Trident
+
+如果您使用BlueXP或Trident操作员(Helm或手动)安装了Astra Trident、则可以使用BlueXP卸载它。
+
+[NOTE]
+====
+* 卸载Astra Trident后、您无法创建新的永久性卷、但现有卷仍可用。
+* 卸载Astra Trident后、备份不可用。
+* 您可以随时将Astra Trident重新安装到工作环境中、以继续管理集群。
+
+
+====
+使用BlueXP卸载Astra Trident不会删除安装期间应用的所有Astra Trident服务。要完全删除Astra Trident、包括它创建的所有自定义资源定义(CRD)、请参见 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-the-trident-operator["使用Trident操作符卸载"^]
+
+.步骤
+. 在概述页面中、选择省略号和*卸载Astra Trident *。
++
+image:screenshot-trident-uninstall.png["用于卸载Astra Trident的菜单的屏幕截图。"]
+
+. 选择*卸载*确认并卸载Astra Trident。
+
+
+.结果
+现在、Astra Trident已从工作环境中卸载。您可以随时重新安装Astra Trident。

@@ -182,7 +182,6 @@
   <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">快速入门</block>
   <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident 文档</block>
-  <block id="703b6be9eec96bb49a157de2a1ae70ae" category="admonition">如果未安装 Astra Trident ，或者安装了不兼容版本的 Astra Trident ，则集群将显示需要执行操作。</block>
   <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">双击 Canvas 上的 Kubernetes 工作环境或单击 * 进入工作环境 * 。</block>
   <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">如果未安装 Astra Trident ，请单击 * 安装 Trident * 。</block>
   <block id="7c729d1891ae54bb841ac8551a0cc665" category="inline-image-macro">K8s 资源页面的屏幕截图，显示未安装 Astra Trident 以及用于安装 Astra Trident 的按钮。</block>
@@ -244,9 +243,6 @@
   <block id="fbb4c4e41bf29d56afd94a8150a4fc4d" category="summary">Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astra Trident 与 Kubernetes 及其永久性卷框架本机集成，可从运行任意 NetApp 存储平台组合的系统无缝配置和管理卷。</block>
   <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link-macro">了解有关 Trident 的更多信息</block>
   <block id="4f63c1d4acd536bd5b9a9745d3f20e7b" category="paragraph">Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astra Trident 与 Kubernetes 及其永久性卷框架本机集成，可从运行任意 NetApp 存储平台组合的系统无缝配置和管理卷。 <block ref="dd2206fc656d0a859de4039d89433dfe" category="inline-link-macro-rx"></block>。</block>
-  <block id="3e1566822574596f61c1fe009087856e" category="list-text">在混合云基础架构中添加和管理集群。</block>
-  <block id="aa6e96555ed26ef1dcb622e5b13653ae" category="list-text">添加和管理存储类并将其连接到工作环境。</block>
-  <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">使用 Cloud Backup Service 备份永久性卷。</block>
   <block id="46a72d9af542e3e84ec5f5f3a72f54c1" category="inline-link-macro">Amazon Elastic Kubernetes Service （ Amazon EKS ）</block>
   <block id="f3bd1985b243e9691bbbd63c6702344b" category="inline-link-macro">Microsoft Azure Kubernetes Service （ AKS ）</block>
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine （ GKEE ）</block>
@@ -353,8 +349,6 @@
   <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
   <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">现在、您可以将Kubernetes集群拖放到AWS FSX for ONTAP 工作环境中、以便直接从Canvas添加存储类。</block>
   <block id="b6f2a65b5d8cda52b65468f1121cccbe" category="inline-link-macro">使用Trident运算符</block>
-  <block id="7bf320596331b39277fe4c33b233a4de" category="list-text">确认已安装兼容版本的Astra Trident、或者升级到最新版本的Astra Trident。请参见 <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
-  <block id="3a6729951b75ba10964e07a3b4768c91" category="list-text">安装或升级Astra Trident。</block>
   <block id="510a1dab177e7ff08d50b9ab0588f804" category="inline-link-macro">使用Trident操作符部署</block>
   <block id="8f13bd8ba84d92d65e6ae6ebc5f6263e" category="paragraph">Astra Trident的四个最新版本之一 <block ref="8da7bbab7c5d8930c9f1dd2985917853" category="inline-link-macro-rx"></block> 为必填项。</block>
   <block id="301f4e6b65ae846f84074dd048ca5b79" category="inline-link-macro">查看Astra Trident前提条件</block>
@@ -363,7 +357,6 @@
   <block id="d6bbc73a6086ac314349118e0d0d4de3" category="paragraph">将受管Kubernetes集群添加到Canvas后、您可以使用NetApp云数据服务进行高级数据管理。</block>
   <block id="9db5c72d5e9592f882f48324ae18d47c" category="paragraph">您可以使用 Cloud Backup 将永久性卷备份到对象存储。</block>
   <block id="62286cd48d8328138c2c4d1b71e6fe45" category="doc">安装或升级Astra Trident</block>
-  <block id="fa68a0b3b7640ba4bb770d375598b4b6" category="list-text">需要使用Trident操作员(手动或使用Helm图表)部署的四个最新版本的Astra Trident之一。</block>
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">如果安装了不受支持的Astra Trident版本、请单击*升级Trident *。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">从"画布"中、将Kubernetes工作环境拖放到Cloud Volumes ONTAP 或Amazon FSx for ONTAP 工作环境中、以打开存储类向导。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
@@ -541,8 +534,6 @@
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</block>
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</block>
   <block id="b9df8925a665185ffc090378d80c3ca0" category="summary">将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装或安装Astra Trident。需要使用四个最新版本的 Astra Trident 之一。</block>
-  <block id="f8172d064c9fb599a086fdf468a86d9c" category="paragraph">将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装或安装Astra Trident或将其升级到最新版本。</block>
-  <block id="158d545fe2a8c88daca03335fce4aab2" category="list-text">使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不支持。如果您使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您不能使用BlueXP管理Kubernetes集群。您必须 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 并重新安装 <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> 或使用以下步骤。</block>
   <block id="2a7197d6e9567831e87e6509f3201004" category="summary">您可以发现Kubernetes集群或将其导入到BlueXP中、以便将永久性卷备份到Google Cloud。</block>
   <block id="0ea87609b14e53ad467ce5d72a9245c5" category="doc">将Google Cloud Kubernetes集群添加到BlueXP</block>
   <block id="02ba2e13b041c6824ecb6e0878729f6b" category="paragraph">BlueXP会将Kubernetes集群添加到Canvas。</block>
@@ -565,7 +556,6 @@
   <block id="bbbfe19ca23f7ee5a4e823af05cbd046" category="doc">将Azure Kubernetes集群添加到BlueXP</block>
   <block id="05ecd2f4a0ed37993412cf4d3e123e85" category="paragraph">您可以发现Kubernetes集群或将其导入到BlueXP、以便将永久性卷备份到Azure。</block>
   <block id="b99333497d2d3db69922107844cb9474" category="paragraph"><block ref="b99333497d2d3db69922107844cb9474" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac6d0965f33632c33b532767c5f5cf1a" category="summary">将Kubernetes集群添加到BlueXP中、以便通过几个快速步骤进行高级数据管理。</block>
   <block id="5ba4facc62a7fe1280b842092b4e64e3" category="paragraph">您可以使用BlueXP添加Kubernetes集群并将其连接到工作环境。</block>
   <block id="6fc0464220dc386a37007468b2c94086" category="paragraph">使用原生 Kubernetes 接口和构造请求和管理永久性卷。BlueXP会创建NFS和iSCSI存储类、您可以在配置永久性卷时使用这些存储类。</block>
   <block id="22a7b4f5dd259ae78aeff6a22466a375" category="paragraph">将Kubernetes集群添加到BlueXP后、您可以从BlueXP资源页面管理这些集群。</block>
@@ -586,13 +576,11 @@
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、现在、您可以为块或文件系统存储启用存储类经济性。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
-  <block id="7caa90f14b457665f7fa695360ecb815" category="paragraph">通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用直接管理Kubernetes集群 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
-  <block id="485af08837450e02af336c55571fef57" category="paragraph">将Kubernetes集群添加到BlueXP中、以便通过几个步骤进行高级数据管理。</block>
   <block id="c0a71f242f9a20837eeb221262b5ec52" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> 您只需几个步骤即可开始管理Kubernetes集群。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">开始之前</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
@@ -629,4 +617,84 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
   <block id="14d43bcefa1304e65774a093c0b798c2" category="sidebar">导入OpenShift集群</block>
+  <block id="2d5671c9f87d5881eec80e4e140c0364" category="list-text">确认已安装兼容版本的Astra Trident、升级到最新版本的Astra Trident或卸载Astra Trident。请参见 <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
+  <block id="18f4dd4dcad9491106ca9ad766f15972" category="summary">使用BlueXP、您只需几个步骤即可开始管理Kubernetes集群。</block>
+  <block id="c949166d6970748c0094c800daa3324a" category="doc">管理 Astra Trident</block>
+  <block id="5362d84aa85052dc57ee427cc92ef344" category="paragraph">将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP确认兼容的Astra Trident安装、安装或升级Astra Trident到最新版本或卸载Astra Trident。</block>
+  <block id="161d9090769f19a69eef7ef0c229d93d" category="section-title">《BlueXP中的Astra Trident》</block>
+  <block id="62c30bcfbdb4b7c0181a789ede3e749a" category="paragraph">将Kubernetes集群添加到BlueXP后、您可以从概述页面管理Astra Trident和Kubernetes集群。要打开概述页面、请双击Canvas上的Kubernetes工作环境。</block>
+  <block id="ec6fcae1ba8df077c437ef2026436316" category="section-title">支持的Astra Trident版本</block>
+  <block id="ea355478bf6a72e41e6454dd0be48ae2" category="paragraph">需要使用Trident操作员(手动或使用Helm图表)部署的四个最新版本的Astra Trident之一。如果未安装 Astra Trident ，或者安装了不兼容版本的 Astra Trident ，则集群将显示需要执行操作。</block>
+  <block id="54569e194bab3dae1d44eaaa9ad1ab0b" category="inline-link-macro">Trident运算符</block>
+  <block id="8153aaea8ca787dd0f6e13cd06ba39b8" category="admonition">使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> 不支持。如果您使用部署了Astra Trident<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>、您不能使用BlueXP管理Kubernetes集群或卸载Astra Trident。您必须 <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 并使用手动重新安装Astra Trident <block ref="63fe8d185cbbf6a0ce17ed72ff923974" category="inline-link-macro-rx"></block> 或在BlueXP中使用 <block ref="f1de51606b29dff0c9b1a92d4a5068f2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="85476e9aef7545cef68e349b3a81422c" category="paragraph">您可以在概述页面上查看Astra Trident安装状态和版本。如果尚未安装Astra Trident、或者安装了不兼容的版本、则可以使用BlueXP来管理。</block>
+  <block id="5ff3faebb0ff710340bdbee89a4667ad" category="inline-link-macro">使用操作员升级</block>
+  <block id="244f5a9f7cb41a54f23539754a6e17b2" category="admonition">您不能使用BlueXP从21.01之前的Astra Trident版本进行升级。要从早期版本升级、请参见 <block ref="c2b60006c9fadcf65befa6bac681ff72" category="inline-link-macro-rx"></block>。</block>
+  <block id="43f17763173fe230bdd78477152f5f7d" category="section-title">卸载 Astra Trident</block>
+  <block id="83b445d8ff0d72c31d8404121a5105f4" category="paragraph">如果您使用BlueXP或Trident操作员(Helm或手动)安装了Astra Trident、则可以使用BlueXP卸载它。</block>
+  <block id="7d4b056f6045b6850c0716327db288b6" category="list-text">卸载Astra Trident后、您无法创建新的永久性卷、但现有卷仍可用。</block>
+  <block id="324bdc145af29bc671d0caf2a7b498f6" category="list-text">卸载Astra Trident后、备份不可用。</block>
+  <block id="311bac3bde31940eb5734ccc0f196472" category="list-text">您可以随时将Astra Trident重新安装到工作环境中、以继续管理集群。</block>
+  <block id="58696af88eb7bc52de53be6f3297f99c" category="inline-link-macro">使用Trident操作符卸载</block>
+  <block id="3c8ca53356eeccb12428a250663aa881" category="paragraph">使用BlueXP卸载Astra Trident不会删除安装期间应用的所有Astra Trident服务。要完全删除Astra Trident、包括它创建的所有自定义资源定义(CRD)、请参见 <block ref="3d29040915e5b5cb57038cab0797dd4f" category="inline-link-macro-rx"></block></block>
+  <block id="77addfb223c3ed99a41d37952c95a6fb" category="list-text">在概述页面中、选择省略号和*卸载Astra Trident *。</block>
+  <block id="81241d9f0e44951e32c292b050624aba" category="inline-image-macro">用于卸载Astra Trident的菜单的屏幕截图。</block>
+  <block id="46844a78cea0511267653b2ff244faab" category="paragraph"><block ref="46844a78cea0511267653b2ff244faab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e36a0095f836afc001b2d9c1edee5e6f" category="list-text">选择*卸载*确认并卸载Astra Trident。</block>
+  <block id="35019b4b6292627398d74835213fc1d9" category="paragraph">现在、Astra Trident已从工作环境中卸载。您可以随时重新安装Astra Trident。</block>
+  <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
+  <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">卸载Astra Trident</block>
+  <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">您现在可以： <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> 使用Trident操作员或BlueXP安装的。</block>
+  <block id="b39075adcfffd4fd3160f2f3f63a59c5" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> (以前称为Cloud Manager)以及使用Trident操作员部署的兼容版本的Astra Trident、您可以：</block>
+  <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">添加和管理Kubernetes集群</block>
+  <block id="a328809c4e80884ded58a673a70bcad8" category="inline-link-macro">安装、升级或卸载Astra Trident</block>
+  <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
+  <block id="8d9aa96de7c286ee7d10cfa821025a6f" category="inline-link-macro">添加和删除存储类</block>
+  <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
+  <block id="5d330c78fdbd034ad3466dadfcb8a623" category="list-text"><block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block></block>
+  <block id="9c153b8dfcd24e0e7636fce1b4bc0046" category="inline-link-macro">删除Kubernetes集群</block>
+  <block id="1055dc3b82f79fd0cc2d70e2b80ad343" category="list-text"><block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 从工作空间</block>
+  <block id="579ae5f19c02240c7a837f86f15400b5" category="inline-link-macro">激活或查看Cloud Backup</block>
+  <block id="9f4013cde5baeea58bab7f26d0642b38" category="list-text"><block ref="9f4013cde5baeea58bab7f26d0642b38" category="inline-link-macro-rx"></block></block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件(可选)*：一次最多上传五个附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支持案例(预览)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理以预览形式提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">页面顶部的案例管理信息板提供了两个视图：</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左侧视图显示了您提供的用户NSS帐户在过去3个月内打开的案例总数。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右侧视图显示了过去3个月内根据用户NSS帐户在公司级别开立的案例总数。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">此表中的结果反映了与选定视图相关的案例。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以添加或删除感兴趣的列、也可以筛选优先级和状态等列的内容。其他列仅提供排序功能。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">有关更多详细信息、请查看以下步骤。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在每个案例级别、我们可以更新案例备注或关闭尚未处于"已关闭"或"待关闭"状态的案例。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">单击*案例管理*、如果出现提示、请将您的NSS帐户添加到BlueXP。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">"*案例管理*"页面显示了与您的BlueXP用户帐户关联的NSS帐户相关的已打开案例。此NSS帐户与* NSS管理*页面顶部显示的NSS帐户相同。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">也可以修改表中显示的信息：</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*组织的案例*下、单击*查看*以查看与您的公司关联的所有案例。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">通过选择确切的日期范围或选择其他时间范围来修改日期范围。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理页面上表上方选项的屏幕截图、可用于选择确切的日期范围或过去7天、30天或3个月。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">筛选列的内容。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">"状态"列中筛选选项的屏幕截图、可用于筛选与特定状态(如"活动"或"已关闭")匹配的案例。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表中显示的加号图标</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">通过单击更改表中显示的列 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然后选择要显示的列。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">显示可在表中显示的列的屏幕截图。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">包含三个点的图标、显示在表的最后一列中</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">单击以管理现有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 并选择一个可用选项：</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息、或者选择*上传文件*最多附加五个文件。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS帐户必须是客户级别的帐户(而不是来宾或临时帐户)。您可以拥有多个客户级别的NSS帐户。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果此帐户是合作伙伴级别的帐户、则只能有一个NSS帐户。如果您尝试添加客户级别的NSS帐户、并且存在合作伙伴级别的帐户、则会收到以下错误消息：</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"此帐户不允许使用NSS客户类型、因为已存在不同类型的NSS用户。"</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客户级别的NSS帐户、并尝试添加合作伙伴级别的帐户、则也是如此。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登录后、NetApp将存储NSS用户名。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此选项将提示您重新登录。请注意、这些帐户的令牌将在90天后过期。系统将发布通知、提醒您注意这一点。</block>
 </blocks>

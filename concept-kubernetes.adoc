@@ -20,12 +20,14 @@ Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astr
 
 == 功能
 
-通过使用Trident操作员部署的兼容版本的Astra Trident、您可以使用直接管理Kubernetes集群 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] (以前称为Cloud Manager)。
+使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] (以前称为Cloud Manager)以及使用Trident操作员部署的兼容版本的Astra Trident、您可以：
 
-* 安装或升级Astra Trident。
-* 在混合云基础架构中添加和管理集群。
-* 添加和管理存储类并将其连接到工作环境。
-* 使用 Cloud Backup Service 备份永久性卷。
+* 添加和管理Kubernetes集群
+* link:./task/task-k8s-manage-trident.html["安装、升级或卸载Astra Trident"]
+* link:./task/task-k8s-manage-storage-classes.html["添加和删除存储类"]
+* link:./task/task-k8s-manage-persistent-volumes.html["查看永久性卷"]
+* link:./task/task-k8s-manage-remove-cluster.html["删除Kubernetes集群"] 从工作空间
+* link:./task/task-kubernetes-enable-services.html["激活或查看Cloud Backup"]
 
 
 
@@ -44,6 +46,9 @@ BlueXP支持在以下环境中运行的受管Kubernetes集群：
 == 支持的 Astra Trident 部署
 
 Astra Trident的四个最新版本之一 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident操作符部署"^] 为必填项。
+
+
+NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./tasks/task-k8s-manage-trident.html["使用BlueXP"]。
 
 您可以直接从BlueXP安装或升级到最新版本的Astra Trident。
 

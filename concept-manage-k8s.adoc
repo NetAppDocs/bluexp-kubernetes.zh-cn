@@ -29,7 +29,7 @@ image:screenshot-k8s-resource-page.png["显示集群详细信息的 Kubernetes �
 在资源页面中，您可以：
 
 * 查看 Kubernetes 集群状态。
-* 确认已安装兼容版本的Astra Trident、或者升级到最新版本的Astra Trident。请参见 link:./task/task-k8s-manage-trident.html["安装 Astra Trident"]。
+* 确认已安装兼容版本的Astra Trident、升级到最新版本的Astra Trident或卸载Astra Trident。请参见 link:./task/task-k8s-manage-trident.html["安装 Astra Trident"]。
 * 添加和删除存储类。请参见 link:./task/task-k8s-manage-storage-classes.html["管理存储类"]。
 * 查看永久性卷。请参见 link:./task/task-k8s-manage-persistent-volumes.html["查看永久性卷"]。
 * 从工作空间中删除 Kubernetes 集群。请参见 link:./task/task-k8s-manage-remove-cluster.html["删除集群"]。
