@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-kubernetes-discover-openshift.html 
+permalink: task/task-kubernetes-discover-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
 summary: 将自管理的OpenShift集群导入到BlueXP中、以便开始将永久性卷备份到云提供商。 
 ---

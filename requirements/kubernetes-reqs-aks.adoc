@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-aks.html 
+permalink: requirements/kubernetes-reqs-aks.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, azure, aks, kubernetes support 
 summary: '您可以使用BlueXP在Azure中添加和管理受管Azure Kubernetes集群(AKS)和自管Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。' 
 ---

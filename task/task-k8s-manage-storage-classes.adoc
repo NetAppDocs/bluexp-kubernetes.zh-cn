@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-k8s-manage-storage-classes.html 
+permalink: task/task-k8s-manage-storage-classes.html 
 keywords: kubernetes, k8s, add storage class, remove storage class 
 summary: 将受管Kubernetes集群添加到Canvas后、您可以使用BlueXP管理存储类。 
 ---

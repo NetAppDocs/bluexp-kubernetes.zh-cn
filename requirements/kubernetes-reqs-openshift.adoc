@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-openshift.html 
+permalink: requirements/kubernetes-reqs-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
 summary: 您可以使用BlueXP添加和管理自管理OpenShift Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。 
 ---
