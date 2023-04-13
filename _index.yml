@@ -13,20 +13,26 @@ indexpage:
   - title: 要求
     links:
     - title: AWS 上的 Kubernetes 集群
+      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure 上的 Kubernetes 集群
+      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud 上的 Kubernetes 集群
+      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
     - title: OpenShift上的Kubernetes集群
       url: "/requirements/kubernetes-reqs-openshift.html"
   - title: 添加 Kubernetes 集群
     links:
     - title: 在 AWS 上添加集群
+      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: 在 Azure 上添加集群
+      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: 在 Google Cloud 上添加集群
+      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
     - title: 导入OpenShift集群
       url: "/task/task-kubernetes-discover-openshift.html"
