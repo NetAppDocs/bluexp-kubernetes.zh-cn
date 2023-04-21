@@ -48,7 +48,7 @@ BlueXP支持在以下环境中运行的受管Kubernetes集群：
 Astra Trident的四个最新版本之一 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident操作符部署"^] 为必填项。
 
 
-NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./tasks/task-k8s-manage-trident.html["使用BlueXP"]。
+NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
 
 您可以直接从BlueXP安装或升级到最新版本的Astra Trident。
 

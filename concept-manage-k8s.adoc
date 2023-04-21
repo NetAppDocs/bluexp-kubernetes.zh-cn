@@ -16,7 +16,7 @@ summary: 您可以使用BlueXP安装Astra Trident、配置存储类、删除集�
 [].Lead)您可以使用BlueXP安装或升级Astra Trident、配置存储类、删除集群以及启用数据服务。
 
 
-NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./tasks/task-k8s-manage-trident.html["使用BlueXP"]。
+NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
 
 
 
