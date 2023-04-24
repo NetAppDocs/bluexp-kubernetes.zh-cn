@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager, bluexp' 
 summary: 了解BlueXP中Kubernetes的新增功能。 
 ---
 = BlueXP中的Kubernetes新增功能
@@ -14,7 +14,7 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 
 [role="lead"]
-了解BlueXP中Kubernetes中的新增功能(以前称为Cloud Manager)。
+在BlueXP (Cloud Manager)中了解Kubelnetes中的新增功能。
 
 
 
