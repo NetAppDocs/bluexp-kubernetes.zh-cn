@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-manage-k8s.html 
-keywords: overview, manage, k8s, kubernetes 
+keywords: overview, manage, k8s, kubernetes, tridentctl, trident operator, operator 
 summary: 您可以使用BlueXP安装Astra Trident、配置存储类、删除集群以及启用数据服务。 
 ---
 = 管理 Kubernetes 集群
@@ -13,10 +13,8 @@ summary: 您可以使用BlueXP安装Astra Trident、配置存储类、删除集�
 :imagesdir: ./media/
 
 
-[].Lead)您可以使用BlueXP安装或升级Astra Trident、配置存储类、删除集群以及启用数据服务。
-
-
-NOTE: 使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
+[role="lead"]
+您可以使用BlueXP安装或升级Astra Trident、配置存储类、删除集群以及启用数据服务。
 
 
 
@@ -35,3 +33,9 @@ image:screenshot-k8s-resource-page.png["显示集群详细信息的 Kubernetes �
 * 从工作空间中删除 Kubernetes 集群。请参见 link:./task/task-k8s-manage-remove-cluster.html["删除集群"]。
 * 激活或查看BlueXP备份和恢复。请参见 link:./task/task-kubernetes-enable-services.html["使用 NetApp 云数据服务"]。
 
+
+
+
+== 已知限制
+
+使用部署了Astra Trident `tridentctl` 不支持。如果您使用部署了Astra Trident `tridentctl`、您不能使用BlueXP管理Kubernetes集群。您必须  并重新安装 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["使用Trident运算符"^] 或 link:./task/task-k8s-manage-trident.html["使用BlueXP"]。
