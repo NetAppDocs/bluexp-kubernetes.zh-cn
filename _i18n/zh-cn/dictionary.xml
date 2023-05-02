@@ -254,7 +254,6 @@
   <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">备份 / 还原</block>
   <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">添加基本授权，以便为 Kubernetes 集群启用备份和还原。</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">存储类</block>
-  <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">安装 Trident</block>
   <block id="05a0030833e70e4af624c3716f988104" category="list-text">根据您的授权要求创建包含以下文本的 YAML 文件。将 ``ssubjects ： kind ：`` 变量替换为您的用户名，将 ``ssubjects ： user ：`` 替换为系统分配的受管身份的对象 ID 或上述任何授权用户的用户名。</block>
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">要启用不同的功能，需要不同的授权。</block>
@@ -421,7 +420,6 @@
   <block id="f7222df6cb8751e5170e0c080b1d9c8b" category="admonition">安装Astra Trident时、BlueXP会安装Astra Trident后端和Kubernetes密钥、其中包含Astra Trident与存储集群通信所需的凭据。</block>
   <block id="cdca0da1d2011ac8290613208cd27183" category="paragraph">使用OpenShift命令行界面创建一个kubeconfig文件以导入到BlueXP中。</block>
   <block id="ef8cb07eb709ab2dd77c5197292f1ad7" category="paragraph">添加扩展授权以使用BlueXP添加存储类。</block>
-  <block id="1fe5f07cd7f6b046882a66a9f9c308d2" category="paragraph">授予完全管理员授权并启用BlueXP以安装Astra Trident。</block>
   <block id="1cf62d04ff1d6f106540e83e87189d1e" category="paragraph">您将使用生成的<block ref="f6adb0f39622272857607018d7dae272" prefix=" " category="inline-code"></block> 用于将OpenShift集群添加到BlueXP的文件。</block>
   <block id="5864314e79f82b7c3c052854ba96e1e0" category="summary">您可以使用BlueXP在Google中添加和管理受管Google Kubernetes Engine集群(GKEE)和自管Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。</block>
   <block id="16b03cdbe1a0514e3fcd3be6a9b75e53" category="paragraph">您可以使用BlueXP在Google中添加和管理受管Google Kubernetes Engine (GKEE)集群和自管Kubernetes集群。在将集群添加到BlueXP之前、请确保满足以下要求。</block>
@@ -434,7 +432,6 @@
   <block id="a98bab458877b0457a2c3a9d497d4c28" category="list-text">要使用BlueXP添加存储类并监控集群中的后端更改、需要扩展授权。</block>
   <block id="0b8291e09c9132ced81e011fafd4e6f6" category="list-text">要安装Astra Trident、您需要为BlueXP提供完全授权。</block>
   <block id="4e5cd7e1a45a0aed5c401dff45585470" category="paragraph">以进行配置 <block ref="28fbe2acd4be605635c165dd4f851ab7" prefix="" category="inline-code"></block> 在YAML文件中、您需要知道BlueXP的唯一ID。</block>
-  <block id="52964b35567ba6adef127cdd68d2fa70" category="paragraph">使用命令行提供完全授权并启用BlueXP以安装Astra Trident。</block>
   <block id="a895f05376600e7bc32dbc4f67005168" category="summary">在将Amazon Elastic Kubernetes Service (Amazon EKS)集群添加到BlueXP之前、您需要确保满足以下要求。</block>
   <block id="90d6ace9ee6fceabcd67dc1494bdf5d6" category="paragraph">您可以将AWS上的受管Amazon Elastic Kubernetes Service (EKS)集群或自管Kubernetes集群添加到BlueXP。在将集群添加到BlueXP之前、您需要确保满足以下要求。</block>
   <block id="6415585679e8669958974ee45b65dfd2" category="list-text">必须在每个Kubernetes集群上授权BlueXP Connector角色。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
@@ -689,6 +686,12 @@
   <block id="7700de0c0f5f67fa6642e11a7a8430a9" category="paragraph"><block ref="7700de0c0f5f67fa6642e11a7a8430a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77e1e303a063c3bd0ea334e8a2343ce0" category="list-text">激活或查看BlueXP备份和恢复。请参见 <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb10d90f9780d4b2ba3926ffaaa63b04" category="inline-link-macro">激活或查看BlueXP备份和恢复</block>
-  <block id="d85b4300d8f4111c0c79d2d65cad3858" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> (Cloud Manager)以及使用三项功能操作符部署的Asta三项功能的兼容版本、您可以：*添加和管理Kubnetes集群* <block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block>* <block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block>* <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>* <block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 从工作空间* <block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
   <block id="bb9d6271eda9dfe1e95490ac0c6196e0" category="paragraph">在BlueXP (Cloud Manager)中了解Kubelnetes中的新增功能。</block>
+  <block id="e30f3ee6790404c5b010673da880568c" category="paragraph">使用 <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> (Cloud Manager)以及使用三项功能操作符部署的A作用 于Astra三项功能的兼容版本、您可以：</block>
+  <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">添加和管理Kubernetes集群</block>
+  <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
+  <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
+  <block id="5d330c78fdbd034ad3466dadfcb8a623" category="list-text"><block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block></block>
+  <block id="1055dc3b82f79fd0cc2d70e2b80ad343" category="list-text"><block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> 从工作空间</block>
+  <block id="de6156e46a0797be4d22df59cc5bf2d9" category="list-text"><block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
 </blocks>

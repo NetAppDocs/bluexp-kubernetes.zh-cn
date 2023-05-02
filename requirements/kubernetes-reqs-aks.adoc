@@ -279,15 +279,6 @@ roleRef:
     apiGroup: rbac.authorization.k8s.io
 ----
 --
-.安装 Trident
---
-使用命令行提供完全授权并启用BlueXP以安装Astra Trident。
-
-[source, cli]
-----
-kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Object (principal) ID>
-----
---
 ====
 . 将配置应用于集群。
 +

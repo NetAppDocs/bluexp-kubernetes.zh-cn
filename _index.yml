@@ -33,7 +33,6 @@ indexpage:
       flavor: azure
     - title: 在 Google Cloud 上添加集群
       url: "/task/task-kubernetes-discover-gke.html"
-      flavor: gcp
     - title: 导入OpenShift集群
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: 管理 Kubernetes 集群
