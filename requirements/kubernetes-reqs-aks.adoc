@@ -132,13 +132,15 @@ image:screenshot-k8s-aks-obj-id.png["Azure 管理门户上系统分配的对象 
 .步骤
 创建集群角色和角色绑定。
 
-. 根据您的授权要求创建包含以下文本的 YAML 文件。将 ``ssubjects ： kind ：`` 变量替换为您的用户名，将 ``ssubjects ： user ：`` 替换为系统分配的受管身份的对象 ID 或上述任何授权用户的用户名。
+. 您可以根据需要自定义授权。
 +
 [role="tabbed-block"]
 ====
 .备份 / 还原
 --
 添加基本授权，以便为 Kubernetes 集群启用备份和还原。
+
+更换 ``subjects: kind:`` 变量、并输入您的用户名和 ``subjects: user:`` 具有系统分配的受管身份的对象ID或上述任何授权用户的用户名。
 
 [source, yaml]
 ----
@@ -217,6 +219,8 @@ roleRef:
 --
 添加扩展授权以使用BlueXP添加存储类。
 
+更换 ``subjects: kind:`` 变量、并输入您的用户名和 ``subjects: user:`` 具有系统分配的受管身份的对象ID或上述任何授权用户的用户名。
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -277,6 +281,15 @@ roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
+----
+--
+.安装｛\f270通过｝｛\f151。｝
+--
+使用命令行提供完全授权并启用BlueXP以安装Astra Trident。
+
+[source, cli]
+----
+eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "system:masters" --username system:node:{{EC2PrivateDNSName}}
 ----
 --
 ====
