@@ -42,8 +42,8 @@ RBAC 授权:: 无论是否使用Active Directory、BlueXP都支持启用了RBAC�
 
 按照以下链接之一中的步骤进行操作。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["从BlueXP创建连接器"^] 建议
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在现有 Linux 主机上安装 Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-gcp.html["从BlueXP创建连接器"^] 建议
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["在现有 Linux 主机上安装 Connector"^]
 
 
 

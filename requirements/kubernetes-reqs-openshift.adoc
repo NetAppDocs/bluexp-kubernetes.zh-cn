@@ -25,9 +25,9 @@ Cloud Volumes ONTAP:: 必须将 Cloud Volumes ONTAP 设置为集群的后端存�
 BlueXP连接器:: 要导入和管理Kubernetes集群、需要使用BlueXP Connector。您需要创建新的Connector或使用具有云提供商所需权限的现有Connector：
 +
 --
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWS连接器"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure连接器"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connector"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWS连接器"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure连接器"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connector"]
 
 
 --

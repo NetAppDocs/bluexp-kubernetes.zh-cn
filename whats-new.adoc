@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager, bluexp' 
-summary: 了解BlueXP中Kubernetes的新增功能。 
+summary: 了解BlueXP中的Kubelnetes的新增功能。 
 ---
 = BlueXP中的Kubernetes新增功能
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 
 [role="lead"]
-在BlueXP (Cloud Manager)中了解Kubelnetes中的新增功能。
+了解BlueXP中的Kubelnetes的新增功能。
 
 
 
 == 2023年4月2日
 
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["卸载Astra Trident"] 使用Trident操作员或BlueXP安装的。
+* 您现在可以： link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["卸载Astra Trident"] 使用Trident操作员或BlueXP安装的。
 * 文档中对用户界面进行了改进、并更新了屏幕截图。
 
 
@@ -36,7 +36,7 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 == 2022年11月6日
 
-时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
+时间 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
 
 
 
@@ -44,8 +44,8 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 现在、您可以将自管理的OpenShift集群导入到Cloud Manager中。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes集群的要求"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-openshift.html["将OpenShift集群导入到Cloud Manager中"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes集群的要求"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["将OpenShift集群导入到Cloud Manager中"]
 
 
 
@@ -54,15 +54,15 @@ summary: 了解BlueXP中Kubernetes的新增功能。
 
 * 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS 中 Kubernetes 集群的要求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html["AWS 中 Kubernetes 集群的要求"]
 
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure 中 Kubernetes 集群的要求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html["Azure 中 Kubernetes 集群的要求"]
 
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
 
-* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块存储指定文件系统类型(fstype)。
+* 时间 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块存储指定文件系统类型(fstype)。
 
 
 
@@ -71,11 +71,11 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 * 如果使用Trident操作员部署了Astra Trident、则现在可以使用Cloud Manager升级到最新版本的Astra Trident。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安装和管理Astra Trident"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["安装和管理Astra Trident"]
 
 * 现在、您可以将Kubernetes集群拖放到AWS FSX for ONTAP 工作环境中、以便直接从Canvas添加存储类。
 +
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
 
 
 
@@ -95,7 +95,7 @@ Cloud Manager现在支持将适用于ONTAP 的Amazon FSX用作后端存储。
 
 现在、您可以将Kubernetes集群拖放到Cloud Volumes ONTAP 工作环境中、以便直接从Canvas添加存储类。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
 
 
 
@@ -105,15 +105,15 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 
 === 使用 Cloud Manager 资源页面管理 Kubernetes 集群
 
-现在， Kubernetes 集群管理已增强了直接与集群工作环境的集成。新的 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["快速入门"] 让您快速启动和运行。
+现在， Kubernetes 集群管理已增强了直接与集群工作环境的集成。新的 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-quick-start.html["快速入门"] 让您快速启动和运行。
 
 现在，您可以从集群资源页面执行以下操作。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安装 Astra Trident"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["添加存储类"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["查看永久性卷"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["删除集群"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["启用数据服务"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["安装 Astra Trident"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html["添加存储类"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-persistent-volumes.html["查看永久性卷"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-remove-cluster.html["删除集群"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-enable-services.html["启用数据服务"]
 
 
 
@@ -126,7 +126,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 
 现在，您可以使用 Cloud Manager 在 Google Cloud 中添加和管理受管 Google Kubernetes Engine （ GKEE ）集群和自管 Kubernetes 集群。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["了解如何在 Google Cloud 中开始使用 Kubernetes 集群"]。
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html["了解如何在 Google Cloud 中开始使用 Kubernetes 集群"]。
 
 
 
@@ -138,7 +138,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 现在，您可以使用 Cloud Manager 在 Azure 中添加和管理受管 Azure Kubernetes 集群（ AKS ）和自管 Kubernetes 集群。
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["开始在 Azure 中使用 Kubernetes 集群"]
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html["开始在 Azure 中使用 Kubernetes 集群"]
 
 
 
@@ -154,7 +154,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 * 使用 Cloud Backup 备份永久性卷
 
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解有关 Kubernetes 支持的更多信息"]。
+link:https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["了解有关 Kubernetes 支持的更多信息"]。
 
 
 TIP: 现有 Kubernetes 服务（可通过 * K8* 选项卡访问）已弃用，并将在未来版本中删除。

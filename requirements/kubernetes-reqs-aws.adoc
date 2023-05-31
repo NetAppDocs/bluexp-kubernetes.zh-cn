@@ -42,9 +42,9 @@ RBAC 授权:: 必须在每个Kubernetes集群上授权BlueXP Connector角色。 
 
 按照以下链接之一中的步骤进行操作。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["从BlueXP创建连接器"^] 建议
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["从 AWS Marketplace 创建 Connector"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 AWS 的现有 Linux 主机上安装 Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["从BlueXP创建连接器"^] 建议
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-aws-mktp.html["从 AWS Marketplace 创建 Connector"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["在 AWS 的现有 Linux 主机上安装 Connector"^]
 
 
 
@@ -72,7 +72,7 @@ image:screenshot-aws-edit-policy.png["AWS 控制台的屏幕截图，显示权�
 
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看策略的完整 JSON 格式"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看策略的完整 JSON 格式"^]
 
 . 单击 * 查看策略 * ，然后单击 * 保存更改 * 。
 

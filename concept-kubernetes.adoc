@@ -20,7 +20,7 @@ Astra Trident 是由 NetApp 维护的一个完全受支持的开源项目。Astr
 
 == 功能
 
-使用 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] (Cloud Manager)以及使用三项功能操作符部署的A作用 于Astra三项功能的兼容版本、您可以：
+使用 link:https://docs.netapp.com/us-en/bluexp-setup-admin/index.html["BlueXP"^] 以及使用三端技术运算符部署的兼容版本Asta三端技术、您可以：
 
 * 添加和管理Kubernetes集群
 * link:./task/task-k8s-manage-trident.html["安装、升级或卸载Astra Trident"]
