@@ -473,7 +473,6 @@
   <block id="87675ab25dc7f237387bffff0f0b5b0a" category="doc">BlueXP中的Kubernetes新增功能</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
   <block id="20047fa95487365e55e0fe5ef4fc9154" category="sidebar">获取有关BlueXP的帮助</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">选择*文件系统*或*块*存储。</block>
   <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">对于*块*存储、选择文件系统类型(fstype)</block>
   <block id="0755724e46e8d77a91d98ad969973966" category="paragraph"><block ref="0755724e46e8d77a91d98ad969973966" category="inline-image-macro-rx" type="image"></block></block>
@@ -703,4 +702,6 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
+  <block id="531ad5e6be7e9668f912aa6e655e5902" category="paragraph">更换<block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix=" " category="inline-code"></block> 变量、并输入您的用户名和<block ref="28fbe2acd4be605635c165dd4f851ab7" prefix=" " category="inline-code"></block> 具有授权服务帐户的唯一ID。</block>
+  <block id="f7686ca7ddbb48ed256c1ad60bb0a874" category="paragraph">更换<block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix=" " category="inline-code"></block> 变量、并输入您的用户名和<block ref="28fbe2acd4be605635c165dd4f851ab7" prefix=" " category="inline-code"></block> 具有系统分配的受管身份的对象ID或上述任何授权用户的用户名。</block>
 </blocks>

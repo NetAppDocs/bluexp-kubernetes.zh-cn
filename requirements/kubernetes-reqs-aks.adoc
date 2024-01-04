@@ -140,7 +140,7 @@ image:screenshot-k8s-aks-obj-id.png["Azure 管理门户上系统分配的对象 
 --
 添加基本授权，以便为 Kubernetes 集群启用备份和还原。
 
-更换 ``subjects: kind:`` 变量、并输入您的用户名和 ``subjects: user:`` 具有系统分配的受管身份的对象ID或上述任何授权用户的用户名。
+更换 `subjects: kind:` 变量、并输入您的用户名和 `subjects: name:` 具有系统分配的受管身份的对象ID或上述任何授权用户的用户名。
 
 [source, yaml]
 ----
